@@ -50,6 +50,7 @@ namespace GroupProject {
 	private: System::Windows::Forms::Panel^ panel1;
 	private: System::Windows::Forms::Panel^ panel2;
 	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::Label^ label1;
 
 
 
@@ -79,6 +80,7 @@ namespace GroupProject {
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox3))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox4))->BeginInit();
@@ -109,7 +111,7 @@ namespace GroupProject {
 			this->textBox1->ForeColor = System::Drawing::Color::White;
 			this->textBox1->Location = System::Drawing::Point(92, 216);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(222, 23);
+			this->textBox1->Size = System::Drawing::Size(222, 20);
 			this->textBox1->TabIndex = 1;
 			this->textBox1->Text = L"Username";
 			// 
@@ -123,7 +125,7 @@ namespace GroupProject {
 			this->textBox2->ForeColor = System::Drawing::Color::White;
 			this->textBox2->Location = System::Drawing::Point(92, 300);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(222, 23);
+			this->textBox2->Size = System::Drawing::Size(222, 20);
 			this->textBox2->TabIndex = 2;
 			this->textBox2->Text = L"Password";
 			// 
@@ -181,12 +183,27 @@ namespace GroupProject {
 			this->pictureBox2->TabIndex = 12;
 			this->pictureBox2->TabStop = false;
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Arial", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label1->ForeColor = System::Drawing::Color::White;
+			this->label1->Location = System::Drawing::Point(342, 9);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(20, 19);
+			this->label1->TabIndex = 13;
+			this->label1->Text = L"X";
+			this->label1->Click += gcnew System::EventHandler(this, &MyForm::Label1_Click_1);
+			// 
 			// MyForm
 			// 
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(36)),
 				static_cast<System::Int32>(static_cast<System::Byte>(49)));
 			this->ClientSize = System::Drawing::Size(374, 534);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
@@ -196,7 +213,7 @@ namespace GroupProject {
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->button1);
-			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Name = L"MyForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"MyForm";
@@ -243,5 +260,8 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 }
 
 
+private: System::Void Label1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	Close();
+}
 };
 }
