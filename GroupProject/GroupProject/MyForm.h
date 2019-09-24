@@ -253,17 +253,18 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 		if ("admin"==UserRaw)
 		{
 			
-			MessageBox::Show("its admin");
+			MessageBox::Show("It's an admin");
 		}
 		else
 		{
-			MessageBox::Show("its a student");
+			
+			MessageBox::Show("It's a student");
 		}
 	}
 
 	if (getpass != password || readuser.fail())
 	{
-		MessageBox::Show("Username or password invalid");
+		MessageBox::Show("The username &/or password is invalid");
 	}
 
 
