@@ -249,6 +249,15 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 	if (getpass == password && readuser.is_open())
 	{
 		MessageBox::Show("Access Granted \n Account opened!");
+		if ("admin"==UserRaw)
+		{
+			//cout << "its admin" << endl;
+			MessageBox::Show("its admin");
+		}
+		else
+		{
+
+		}
 	}
 
 	if (getpass != password || readuser.fail())
