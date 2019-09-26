@@ -35,6 +35,7 @@ namespace GroupProject {
 			}
 		}
 	private: System::Windows::Forms::Button^  button1;
+	private: System::Windows::Forms::Label^ label1;
 	protected:
 
 	private:
@@ -51,6 +52,7 @@ namespace GroupProject {
 		void InitializeComponent(void)
 		{
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -64,6 +66,17 @@ namespace GroupProject {
 			this->button1->Text = L"button1";
 			this->button1->UseVisualStyleBackColor = false;
 			// 
+			// label1
+			// 
+			this->label1->AutoSize = true;
+			this->label1->ForeColor = System::Drawing::Color::White;
+			this->label1->Location = System::Drawing::Point(12, 9);
+			this->label1->Name = L"label1";
+			this->label1->Size = System::Drawing::Size(44, 13);
+			this->label1->TabIndex = 1;
+			this->label1->Text = L"Student";
+			this->label1->Click += gcnew System::EventHandler(this, &Student::Label1_Click);
+			// 
 			// Student
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -71,13 +84,17 @@ namespace GroupProject {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(36)),
 				static_cast<System::Int32>(static_cast<System::Byte>(49)));
 			this->ClientSize = System::Drawing::Size(284, 261);
+			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Name = L"Student";
 			this->Text = L"Student";
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
+	private: System::Void Label1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
 	};
 }

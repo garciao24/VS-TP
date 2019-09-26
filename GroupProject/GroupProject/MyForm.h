@@ -132,7 +132,7 @@ namespace GroupProject {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(44, 27);
+			this->pictureBox1->Location = System::Drawing::Point(48, 25);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(224, 136);
 			this->pictureBox1->TabIndex = 7;
@@ -199,6 +199,7 @@ namespace GroupProject {
 			// 
 			// MyForm
 			// 
+			this->AccessibleName = L"Log in";
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(36)),
 				static_cast<System::Int32>(static_cast<System::Byte>(49)));
