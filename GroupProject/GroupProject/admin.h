@@ -57,7 +57,7 @@ namespace GroupProject {
 			// 
 			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(78)), static_cast<System::Int32>(static_cast<System::Byte>(184)),
 				static_cast<System::Int32>(static_cast<System::Byte>(206)));
-			this->button1->Location = System::Drawing::Point(0, 0);
+			this->button1->Location = System::Drawing::Point(42, 74);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(159, 84);
 			this->button1->TabIndex = 0;
@@ -68,13 +68,18 @@ namespace GroupProject {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(36)),
+				static_cast<System::Int32>(static_cast<System::Byte>(49)));
 			this->ClientSize = System::Drawing::Size(282, 253);
 			this->Controls->Add(this->button1);
 			this->Name = L"admin";
 			this->Text = L"admin";
+			this->Load += gcnew System::EventHandler(this, &admin::Admin_Load);
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
+	private: System::Void Admin_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
 	};
 }
