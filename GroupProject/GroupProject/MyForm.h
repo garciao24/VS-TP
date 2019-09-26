@@ -93,7 +93,7 @@ namespace GroupProject {
 				static_cast<System::Int32>(static_cast<System::Byte>(206)));
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button1->ForeColor = System::Drawing::Color::Black;
-			this->button1->Location = System::Drawing::Point(60, 368);
+			this->button1->Location = System::Drawing::Point(30, 314);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(260, 42);
 			this->button1->TabIndex = 0;
@@ -109,9 +109,9 @@ namespace GroupProject {
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Arial", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox1->ForeColor = System::Drawing::Color::White;
-			this->textBox1->Location = System::Drawing::Point(92, 216);
+			this->textBox1->Location = System::Drawing::Point(62, 195);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(222, 20);
+			this->textBox1->Size = System::Drawing::Size(222, 16);
 			this->textBox1->TabIndex = 1;
 			this->textBox1->Text = L"Username";
 			// 
@@ -123,16 +123,16 @@ namespace GroupProject {
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Arial", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->textBox2->ForeColor = System::Drawing::Color::White;
-			this->textBox2->Location = System::Drawing::Point(92, 300);
+			this->textBox2->Location = System::Drawing::Point(62, 258);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(222, 20);
+			this->textBox2->Size = System::Drawing::Size(222, 16);
 			this->textBox2->TabIndex = 2;
 			this->textBox2->Text = L"Password";
 			// 
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(77, 42);
+			this->pictureBox1->Location = System::Drawing::Point(44, 27);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(224, 136);
 			this->pictureBox1->TabIndex = 7;
@@ -141,7 +141,7 @@ namespace GroupProject {
 			// pictureBox3
 			// 
 			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
-			this->pictureBox3->Location = System::Drawing::Point(60, 297);
+			this->pictureBox3->Location = System::Drawing::Point(30, 255);
 			this->pictureBox3->Name = L"pictureBox3";
 			this->pictureBox3->Size = System::Drawing::Size(26, 26);
 			this->pictureBox3->TabIndex = 8;
@@ -150,7 +150,7 @@ namespace GroupProject {
 			// pictureBox4
 			// 
 			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
-			this->pictureBox4->Location = System::Drawing::Point(60, 209);
+			this->pictureBox4->Location = System::Drawing::Point(30, 188);
 			this->pictureBox4->Name = L"pictureBox4";
 			this->pictureBox4->Size = System::Drawing::Size(26, 26);
 			this->pictureBox4->TabIndex = 9;
@@ -160,7 +160,7 @@ namespace GroupProject {
 			// 
 			this->panel1->BackColor = System::Drawing::Color::White;
 			this->panel1->ForeColor = System::Drawing::Color::White;
-			this->panel1->Location = System::Drawing::Point(60, 241);
+			this->panel1->Location = System::Drawing::Point(30, 220);
 			this->panel1->Name = L"panel1";
 			this->panel1->Size = System::Drawing::Size(260, 1);
 			this->panel1->TabIndex = 10;
@@ -169,7 +169,7 @@ namespace GroupProject {
 			// 
 			this->panel2->BackColor = System::Drawing::Color::White;
 			this->panel2->ForeColor = System::Drawing::Color::White;
-			this->panel2->Location = System::Drawing::Point(60, 325);
+			this->panel2->Location = System::Drawing::Point(30, 283);
 			this->panel2->Name = L"panel2";
 			this->panel2->Size = System::Drawing::Size(260, 1);
 			this->panel2->TabIndex = 11;
@@ -177,7 +177,7 @@ namespace GroupProject {
 			// pictureBox2
 			// 
 			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
-			this->pictureBox2->Location = System::Drawing::Point(300, 434);
+			this->pictureBox2->Location = System::Drawing::Point(118, 362);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(98, 124);
 			this->pictureBox2->TabIndex = 12;
@@ -190,9 +190,9 @@ namespace GroupProject {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Arial", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::White;
-			this->label1->Location = System::Drawing::Point(342, 9);
+			this->label1->Location = System::Drawing::Point(293, 9);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(20, 19);
+			this->label1->Size = System::Drawing::Size(16, 16);
 			this->label1->TabIndex = 13;
 			this->label1->Text = L"X";
 			this->label1->Click += gcnew System::EventHandler(this, &MyForm::Label1_Click_1);
@@ -202,9 +202,8 @@ namespace GroupProject {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::None;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(36)),
 				static_cast<System::Int32>(static_cast<System::Byte>(49)));
-			this->ClientSize = System::Drawing::Size(374, 534);
+			this->ClientSize = System::Drawing::Size(321, 465);
 			this->Controls->Add(this->label1);
-			this->Controls->Add(this->pictureBox2);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->pictureBox4);
@@ -213,6 +212,7 @@ namespace GroupProject {
 			this->Controls->Add(this->textBox2);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->button1);
+			this->Controls->Add(this->pictureBox2);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Name = L"MyForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
