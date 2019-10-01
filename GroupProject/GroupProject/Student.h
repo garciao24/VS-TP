@@ -54,7 +54,7 @@ namespace GroupProject {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Student::typeid));
+			System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Student::typeid));
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
@@ -67,9 +67,11 @@ namespace GroupProject {
 			// 
 			this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(78)), static_cast<System::Int32>(static_cast<System::Byte>(184)),
 				static_cast<System::Int32>(static_cast<System::Byte>(206)));
-			this->button1->Location = System::Drawing::Point(84, 132);
+			this->button1->FlatAppearance->BorderSize = 0;
+			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button1->Location = System::Drawing::Point(51, 155);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(142, 35);
+			this->button1->Size = System::Drawing::Size(214, 47);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"My Info";
 			this->button1->UseVisualStyleBackColor = false;
@@ -78,7 +80,7 @@ namespace GroupProject {
 			// 
 			this->label1->AutoSize = true;
 			this->label1->ForeColor = System::Drawing::Color::White;
-			this->label1->Location = System::Drawing::Point(107, 96);
+			this->label1->Location = System::Drawing::Point(109, 121);
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(98, 13);
 			this->label1->TabIndex = 1;
@@ -89,9 +91,11 @@ namespace GroupProject {
 			// 
 			this->button2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(78)), static_cast<System::Int32>(static_cast<System::Byte>(184)),
 				static_cast<System::Int32>(static_cast<System::Byte>(206)));
-			this->button2->Location = System::Drawing::Point(84, 183);
+			this->button2->FlatAppearance->BorderSize = 0;
+			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button2->Location = System::Drawing::Point(51, 241);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(142, 34);
+			this->button2->Size = System::Drawing::Size(214, 51);
 			this->button2->TabIndex = 2;
 			this->button2->Text = L"My Grades";
 			this->button2->UseVisualStyleBackColor = false;
@@ -100,9 +104,11 @@ namespace GroupProject {
 			// 
 			this->button3->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(78)), static_cast<System::Int32>(static_cast<System::Byte>(184)),
 				static_cast<System::Int32>(static_cast<System::Byte>(206)));
-			this->button3->Location = System::Drawing::Point(84, 240);
+			this->button3->FlatAppearance->BorderSize = 0;
+			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->button3->Location = System::Drawing::Point(51, 335);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(142, 34);
+			this->button3->Size = System::Drawing::Size(214, 47);
 			this->button3->TabIndex = 3;
 			this->button3->Text = L"My Schedule";
 			this->button3->UseVisualStyleBackColor = false;
@@ -110,9 +116,9 @@ namespace GroupProject {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(91, 12);
+			this->pictureBox1->Location = System::Drawing::Point(96, 28);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(135, 52);
+			this->pictureBox1->Size = System::Drawing::Size(128, 50);
 			this->pictureBox1->TabIndex = 4;
 			this->pictureBox1->TabStop = false;
 			// 
