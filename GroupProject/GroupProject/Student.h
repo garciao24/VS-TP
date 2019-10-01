@@ -78,11 +78,10 @@ namespace GroupProject {
 			// 
 			// label1
 			// 
-			this->label1->AutoSize = true;
 			this->label1->ForeColor = System::Drawing::Color::White;
-			this->label1->Location = System::Drawing::Point(109, 121);
+			this->label1->Location = System::Drawing::Point(109, 114);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(98, 13);
+			this->label1->Size = System::Drawing::Size(102, 20);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"Welcome, Student!";
 			this->label1->Click += gcnew System::EventHandler(this, &Student::Label1_Click);
@@ -106,7 +105,7 @@ namespace GroupProject {
 				static_cast<System::Int32>(static_cast<System::Byte>(206)));
 			this->button3->FlatAppearance->BorderSize = 0;
 			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button3->Location = System::Drawing::Point(51, 335);
+			this->button3->Location = System::Drawing::Point(51, 328);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(214, 47);
 			this->button3->TabIndex = 3;
@@ -116,9 +115,9 @@ namespace GroupProject {
 			// pictureBox1
 			// 
 			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
-			this->pictureBox1->Location = System::Drawing::Point(96, 28);
+			this->pictureBox1->Location = System::Drawing::Point(81, 35);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(128, 50);
+			this->pictureBox1->Size = System::Drawing::Size(166, 60);
 			this->pictureBox1->TabIndex = 4;
 			this->pictureBox1->TabStop = false;
 			// 
@@ -139,7 +138,6 @@ namespace GroupProject {
 			this->Text = L"Student";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
-			this->PerformLayout();
 
 		}
 #pragma endregion
