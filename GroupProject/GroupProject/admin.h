@@ -35,6 +35,7 @@ namespace GroupProject {
 			}
 		}
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ button2;
 	protected:
 
 	private:
@@ -51,6 +52,7 @@ namespace GroupProject {
 		void InitializeComponent(void)
 		{
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// button1
@@ -64,6 +66,15 @@ namespace GroupProject {
 			this->button1->Text = L"button1";
 			this->button1->UseVisualStyleBackColor = false;
 			// 
+			// button2
+			// 
+			this->button2->Location = System::Drawing::Point(86, 12);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(141, 35);
+			this->button2->TabIndex = 1;
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &admin::Button2_Click);
+			// 
 			// admin
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -71,6 +82,7 @@ namespace GroupProject {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(36)),
 				static_cast<System::Int32>(static_cast<System::Byte>(49)));
 			this->ClientSize = System::Drawing::Size(282, 253);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Name = L"admin";
 			this->Text = L"admin";
@@ -80,6 +92,8 @@ namespace GroupProject {
 		}
 #pragma endregion
 	private: System::Void Admin_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void Button2_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
 }

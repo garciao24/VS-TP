@@ -111,9 +111,10 @@ namespace GroupProject {
 			this->textBox1->ForeColor = System::Drawing::Color::White;
 			this->textBox1->Location = System::Drawing::Point(62, 195);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(222, 16);
+			this->textBox1->Size = System::Drawing::Size(222, 20);
 			this->textBox1->TabIndex = 1;
 			this->textBox1->Text = L"Username";
+			this->textBox1->TextChanged += gcnew System::EventHandler(this, &MyForm::TextBox1_TextChanged);
 			// 
 			// textBox2
 			// 
@@ -125,7 +126,7 @@ namespace GroupProject {
 			this->textBox2->ForeColor = System::Drawing::Color::White;
 			this->textBox2->Location = System::Drawing::Point(62, 258);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(222, 16);
+			this->textBox2->Size = System::Drawing::Size(222, 20);
 			this->textBox2->TabIndex = 2;
 			this->textBox2->Text = L"Password";
 			// 
@@ -137,6 +138,7 @@ namespace GroupProject {
 			this->pictureBox1->Size = System::Drawing::Size(224, 136);
 			this->pictureBox1->TabIndex = 7;
 			this->pictureBox1->TabStop = false;
+			this->pictureBox1->Click += gcnew System::EventHandler(this, &MyForm::PictureBox1_Click);
 			// 
 			// pictureBox3
 			// 
@@ -192,7 +194,7 @@ namespace GroupProject {
 			this->label1->ForeColor = System::Drawing::Color::White;
 			this->label1->Location = System::Drawing::Point(293, 9);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(16, 16);
+			this->label1->Size = System::Drawing::Size(20, 19);
 			this->label1->TabIndex = 13;
 			this->label1->Text = L"X";
 			this->label1->Click += gcnew System::EventHandler(this, &MyForm::Label1_Click_1);
@@ -274,6 +276,10 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 
 private: System::Void Label1_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	Close();
+}
+private: System::Void PictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void TextBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
