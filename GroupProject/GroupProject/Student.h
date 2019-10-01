@@ -69,9 +69,9 @@ namespace GroupProject {
 				static_cast<System::Int32>(static_cast<System::Byte>(206)));
 			this->button1->FlatAppearance->BorderSize = 0;
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button1->Location = System::Drawing::Point(51, 155);
+			this->button1->Location = System::Drawing::Point(35, 158);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(214, 47);
+			this->button1->Size = System::Drawing::Size(260, 42);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"My Info";
 			this->button1->UseVisualStyleBackColor = false;
@@ -94,9 +94,9 @@ namespace GroupProject {
 				static_cast<System::Int32>(static_cast<System::Byte>(206)));
 			this->button2->FlatAppearance->BorderSize = 0;
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button2->Location = System::Drawing::Point(51, 241);
+			this->button2->Location = System::Drawing::Point(35, 243);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(214, 51);
+			this->button2->Size = System::Drawing::Size(260, 42);
 			this->button2->TabIndex = 2;
 			this->button2->Text = L"My Grades";
 			this->button2->UseVisualStyleBackColor = false;
@@ -107,9 +107,9 @@ namespace GroupProject {
 				static_cast<System::Int32>(static_cast<System::Byte>(206)));
 			this->button3->FlatAppearance->BorderSize = 0;
 			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->button3->Location = System::Drawing::Point(51, 328);
+			this->button3->Location = System::Drawing::Point(35, 328);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(214, 47);
+			this->button3->Size = System::Drawing::Size(260, 42);
 			this->button3->TabIndex = 3;
 			this->button3->Text = L"My Schedule";
 			this->button3->UseVisualStyleBackColor = false;
