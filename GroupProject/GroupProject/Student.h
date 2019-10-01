@@ -78,10 +78,12 @@ namespace GroupProject {
 			// 
 			// label1
 			// 
+			this->label1->Font = (gcnew System::Drawing::Font(L"Arial", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::White;
-			this->label1->Location = System::Drawing::Point(109, 114);
+			this->label1->Location = System::Drawing::Point(102, 115);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(102, 20);
+			this->label1->Size = System::Drawing::Size(123, 20);
 			this->label1->TabIndex = 1;
 			this->label1->Text = L"Welcome, Student!";
 			this->label1->Click += gcnew System::EventHandler(this, &Student::Label1_Click);
