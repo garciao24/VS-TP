@@ -1,7 +1,8 @@
 # VS-TP
 visual studio gui team project
 Learning Management System
-                           Software Project Management Plan                                     for
+                           Software Project Management Plan                                     
+                              for
                              Learning Management System
 Oscar Garcia, Moises Morales, Nabil Mehari, Florine Nswal
                                    9/19/2019
