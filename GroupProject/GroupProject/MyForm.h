@@ -1,5 +1,6 @@
 #pragma once
-
+#include "admin.h"
+#include "Student.h"
 #include <fstream>
 #include <string>
 #include <msclr/marshal_cppstd.h>
@@ -252,16 +253,17 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 	if (getpass == password && readuser.is_open())
 	{
 		MessageBox::Show("Access Granted \n Account opened!");
-
+		this->Hide();
 		if ("admin"==UserRaw)
 		{
-			
-			MessageBox::Show("It's an admin");
+			//this->Hide();
+			admin ^ad = gcnew admin();
+			ad->ShowDialog();
 		}
 		else
 		{
-			
-			MessageBox::Show("It's a student");
+			Student^ st = gcnew Student();
+			st->ShowDialog();
 		}
 	}
 
@@ -269,7 +271,6 @@ private: System::Void button1_Click(System::Object^  sender, System::EventArgs^ 
 	{
 		MessageBox::Show("The username &/or password is invalid");
 	}
-
 
 }
 
