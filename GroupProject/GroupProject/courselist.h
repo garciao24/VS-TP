@@ -124,6 +124,7 @@ namespace GroupProject {
 			this->enrolledcoursesgridview->RowHeadersWidth = 62;
 			this->enrolledcoursesgridview->Size = System::Drawing::Size(852, 214);
 			this->enrolledcoursesgridview->TabIndex = 0;
+			this->enrolledcoursesgridview->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &courselist::Enrolledcoursesgridview_CellContentClick);
 			// 
 			// department
 			// 
@@ -178,5 +179,7 @@ namespace GroupProject {
 		}
 #pragma endregion
 
+private: System::Void Enrolledcoursesgridview_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+}
 };
 }

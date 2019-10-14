@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClCompile Include="admin.cpp" />
     <ClCompile Include="courselist.cpp" />
+    <ClCompile Include="GPAGrades.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="Student.cpp" />
   </ItemGroup>
@@ -141,6 +142,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="courselist.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="GPAGrades.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MyForm.h">
@@ -156,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="courselist.resx">
       <DependentUpon>courselist.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GPAGrades.resx">
+      <DependentUpon>GPAGrades.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
