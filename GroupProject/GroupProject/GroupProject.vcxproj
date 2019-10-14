@@ -132,11 +132,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="admin.cpp" />
+    <ClCompile Include="courselist.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="Student.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="admin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="courselist.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="MyForm.h">
@@ -149,6 +153,9 @@
   <ItemGroup>
     <EmbeddedResource Include="admin.resx">
       <DependentUpon>admin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="courselist.resx">
+      <DependentUpon>courselist.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
