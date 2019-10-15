@@ -175,9 +175,10 @@ namespace GroupProject {
 			this->Controls->Add(this->backbutton);
 			this->Controls->Add(this->enrolledcoursesgroupbox);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
-			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
+			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"courselist";
 			this->Text = L"courselist";
+			this->Load += gcnew System::EventHandler(this, &courselist::courselist_Load);
 			this->enrolledcoursesgroupbox->ResumeLayout(false);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->enrolledcoursesgridview))->EndInit();
 			this->ResumeLayout(false);
@@ -186,6 +187,8 @@ namespace GroupProject {
 #pragma endregion
 
 private: System::Void Enrolledcoursesgridview_CellContentClick(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
+}
+private: System::Void courselist_Load(System::Object^  sender, System::EventArgs^  e) {
 }
 };
 }
