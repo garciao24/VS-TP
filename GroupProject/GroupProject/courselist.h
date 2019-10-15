@@ -80,32 +80,35 @@ namespace GroupProject {
 			// 
 			// logoutbutton
 			// 
-			this->logoutbutton->Location = System::Drawing::Point(793, 285);
-			this->logoutbutton->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->logoutbutton->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(78)), static_cast<System::Int32>(static_cast<System::Byte>(184)),
+				static_cast<System::Int32>(static_cast<System::Byte>(206)));
+			this->logoutbutton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->logoutbutton->Location = System::Drawing::Point(529, 185);
 			this->logoutbutton->Name = L"logoutbutton";
-			this->logoutbutton->Size = System::Drawing::Size(112, 35);
+			this->logoutbutton->Size = System::Drawing::Size(75, 23);
 			this->logoutbutton->TabIndex = 6;
 			this->logoutbutton->Text = L"Logout";
-			this->logoutbutton->UseVisualStyleBackColor = true;
+			this->logoutbutton->UseVisualStyleBackColor = false;
 			// 
 			// backbutton
 			// 
-			this->backbutton->Location = System::Drawing::Point(671, 285);
-			this->backbutton->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->backbutton->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(78)), static_cast<System::Int32>(static_cast<System::Byte>(184)),
+				static_cast<System::Int32>(static_cast<System::Byte>(206)));
+			this->backbutton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->backbutton->Location = System::Drawing::Point(447, 185);
 			this->backbutton->Name = L"backbutton";
-			this->backbutton->Size = System::Drawing::Size(112, 35);
+			this->backbutton->Size = System::Drawing::Size(75, 23);
 			this->backbutton->TabIndex = 5;
 			this->backbutton->Text = L"Back";
-			this->backbutton->UseVisualStyleBackColor = true;
+			this->backbutton->UseVisualStyleBackColor = false;
 			// 
 			// enrolledcoursesgroupbox
 			// 
 			this->enrolledcoursesgroupbox->Controls->Add(this->enrolledcoursesgridview);
-			this->enrolledcoursesgroupbox->Location = System::Drawing::Point(13, 14);
-			this->enrolledcoursesgroupbox->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->enrolledcoursesgroupbox->ForeColor = System::Drawing::SystemColors::Control;
+			this->enrolledcoursesgroupbox->Location = System::Drawing::Point(9, 9);
 			this->enrolledcoursesgroupbox->Name = L"enrolledcoursesgroupbox";
-			this->enrolledcoursesgroupbox->Padding = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->enrolledcoursesgroupbox->Size = System::Drawing::Size(892, 262);
+			this->enrolledcoursesgroupbox->Size = System::Drawing::Size(595, 170);
 			this->enrolledcoursesgroupbox->TabIndex = 4;
 			this->enrolledcoursesgroupbox->TabStop = false;
 			this->enrolledcoursesgroupbox->Text = L"Enrolled Courses";
@@ -118,11 +121,10 @@ namespace GroupProject {
 				this->department,
 					this->id, this->name, this->professor, this->grade
 			});
-			this->enrolledcoursesgridview->Location = System::Drawing::Point(20, 29);
-			this->enrolledcoursesgridview->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->enrolledcoursesgridview->Location = System::Drawing::Point(13, 19);
 			this->enrolledcoursesgridview->Name = L"enrolledcoursesgridview";
 			this->enrolledcoursesgridview->RowHeadersWidth = 62;
-			this->enrolledcoursesgridview->Size = System::Drawing::Size(852, 214);
+			this->enrolledcoursesgridview->Size = System::Drawing::Size(568, 139);
 			this->enrolledcoursesgridview->TabIndex = 0;
 			this->enrolledcoursesgridview->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &courselist::Enrolledcoursesgridview_CellContentClick);
 			// 
@@ -164,12 +166,16 @@ namespace GroupProject {
 			// 
 			// courselist
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(920, 332);
+			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(36)),
+				static_cast<System::Int32>(static_cast<System::Byte>(49)));
+			this->ClientSize = System::Drawing::Size(613, 216);
 			this->Controls->Add(this->logoutbutton);
 			this->Controls->Add(this->backbutton);
 			this->Controls->Add(this->enrolledcoursesgroupbox);
+			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"courselist";
 			this->Text = L"courselist";
 			this->enrolledcoursesgroupbox->ResumeLayout(false);
