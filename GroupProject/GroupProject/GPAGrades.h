@@ -83,11 +83,9 @@ namespace GroupProject {
 			this->calculategpagroupbox->Controls->Add(this->gpalabel2);
 			this->calculategpagroupbox->Controls->Add(this->calculatebutton);
 			this->calculategpagroupbox->Controls->Add(this->gpalabel);
-			this->calculategpagroupbox->Location = System::Drawing::Point(125, 270);
-			this->calculategpagroupbox->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->calculategpagroupbox->Location = System::Drawing::Point(83, 175);
 			this->calculategpagroupbox->Name = L"calculategpagroupbox";
-			this->calculategpagroupbox->Padding = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->calculategpagroupbox->Size = System::Drawing::Size(398, 108);
+			this->calculategpagroupbox->Size = System::Drawing::Size(265, 70);
 			this->calculategpagroupbox->TabIndex = 10;
 			this->calculategpagroupbox->TabStop = false;
 			this->calculategpagroupbox->Text = L"Calculate GPA";
@@ -95,18 +93,16 @@ namespace GroupProject {
 			// gpalabel2
 			// 
 			this->gpalabel2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->gpalabel2->Location = System::Drawing::Point(72, 57);
-			this->gpalabel2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->gpalabel2->Location = System::Drawing::Point(48, 37);
 			this->gpalabel2->Name = L"gpalabel2";
-			this->gpalabel2->Size = System::Drawing::Size(134, 35);
+			this->gpalabel2->Size = System::Drawing::Size(89, 23);
 			this->gpalabel2->TabIndex = 6;
 			// 
 			// calculatebutton
 			// 
-			this->calculatebutton->Location = System::Drawing::Point(258, 57);
-			this->calculatebutton->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->calculatebutton->Location = System::Drawing::Point(172, 37);
 			this->calculatebutton->Name = L"calculatebutton";
-			this->calculatebutton->Size = System::Drawing::Size(112, 35);
+			this->calculatebutton->Size = System::Drawing::Size(75, 23);
 			this->calculatebutton->TabIndex = 4;
 			this->calculatebutton->Text = L"Calculate";
 			this->calculatebutton->UseVisualStyleBackColor = true;
@@ -116,19 +112,17 @@ namespace GroupProject {
 			this->gpalabel->AutoSize = true;
 			this->gpalabel->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->gpalabel->Location = System::Drawing::Point(68, 28);
-			this->gpalabel->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->gpalabel->Location = System::Drawing::Point(45, 18);
 			this->gpalabel->Name = L"gpalabel";
-			this->gpalabel->Size = System::Drawing::Size(139, 20);
+			this->gpalabel->Size = System::Drawing::Size(92, 13);
 			this->gpalabel->TabIndex = 5;
 			this->gpalabel->Text = L"Semester GPA:";
 			// 
 			// backbutton
 			// 
-			this->backbutton->Location = System::Drawing::Point(569, 282);
-			this->backbutton->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->backbutton->Location = System::Drawing::Point(379, 183);
 			this->backbutton->Name = L"backbutton";
-			this->backbutton->Size = System::Drawing::Size(112, 35);
+			this->backbutton->Size = System::Drawing::Size(75, 23);
 			this->backbutton->TabIndex = 9;
 			this->backbutton->Text = L"Back";
 			this->backbutton->UseVisualStyleBackColor = true;
@@ -136,11 +130,9 @@ namespace GroupProject {
 			// currentgradesgroupbox
 			// 
 			this->currentgradesgroupbox->Controls->Add(this->viewgradegridview);
-			this->currentgradesgroupbox->Location = System::Drawing::Point(13, 14);
-			this->currentgradesgroupbox->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->currentgradesgroupbox->Location = System::Drawing::Point(9, 9);
 			this->currentgradesgroupbox->Name = L"currentgradesgroupbox";
-			this->currentgradesgroupbox->Padding = System::Windows::Forms::Padding(4, 5, 4, 5);
-			this->currentgradesgroupbox->Size = System::Drawing::Size(669, 246);
+			this->currentgradesgroupbox->Size = System::Drawing::Size(446, 160);
 			this->currentgradesgroupbox->TabIndex = 8;
 			this->currentgradesgroupbox->TabStop = false;
 			this->currentgradesgroupbox->Text = L"Current Grades";
@@ -153,11 +145,10 @@ namespace GroupProject {
 				this->department,
 					this->id, this->name, this->grade
 			});
-			this->viewgradegridview->Location = System::Drawing::Point(32, 29);
-			this->viewgradegridview->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->viewgradegridview->Location = System::Drawing::Point(3, 19);
 			this->viewgradegridview->Name = L"viewgradegridview";
 			this->viewgradegridview->RowHeadersWidth = 62;
-			this->viewgradegridview->Size = System::Drawing::Size(628, 194);
+			this->viewgradegridview->Size = System::Drawing::Size(439, 126);
 			this->viewgradegridview->TabIndex = 0;
 			// 
 			// department
@@ -190,23 +181,23 @@ namespace GroupProject {
 			// 
 			// exitbutton
 			// 
-			this->exitbutton->Location = System::Drawing::Point(569, 327);
-			this->exitbutton->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			this->exitbutton->Location = System::Drawing::Point(379, 213);
 			this->exitbutton->Name = L"exitbutton";
-			this->exitbutton->Size = System::Drawing::Size(112, 35);
+			this->exitbutton->Size = System::Drawing::Size(75, 23);
 			this->exitbutton->TabIndex = 7;
 			this->exitbutton->Text = L"Logout";
 			this->exitbutton->UseVisualStyleBackColor = true;
 			// 
 			// GPAGrades
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(697, 387);
+			this->ClientSize = System::Drawing::Size(465, 252);
 			this->Controls->Add(this->calculategpagroupbox);
 			this->Controls->Add(this->backbutton);
 			this->Controls->Add(this->currentgradesgroupbox);
 			this->Controls->Add(this->exitbutton);
+			this->Margin = System::Windows::Forms::Padding(2, 2, 2, 2);
 			this->Name = L"GPAGrades";
 			this->Text = L"GPAGrades";
 			this->calculategpagroupbox->ResumeLayout(false);

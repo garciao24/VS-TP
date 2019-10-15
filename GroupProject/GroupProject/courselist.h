@@ -121,10 +121,10 @@ namespace GroupProject {
 				this->department,
 					this->id, this->name, this->professor, this->grade
 			});
-			this->enrolledcoursesgridview->Location = System::Drawing::Point(13, 19);
+			this->enrolledcoursesgridview->Location = System::Drawing::Point(3, 19);
 			this->enrolledcoursesgridview->Name = L"enrolledcoursesgridview";
 			this->enrolledcoursesgridview->RowHeadersWidth = 62;
-			this->enrolledcoursesgridview->Size = System::Drawing::Size(568, 139);
+			this->enrolledcoursesgridview->Size = System::Drawing::Size(589, 139);
 			this->enrolledcoursesgridview->TabIndex = 0;
 			this->enrolledcoursesgridview->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &courselist::Enrolledcoursesgridview_CellContentClick);
 			// 
