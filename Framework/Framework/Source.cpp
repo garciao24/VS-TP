@@ -1,14 +1,7 @@
 #include <iostream>
 using namespace std;
-int main()
 
-//{
-	//cout << "Hello World" << endl;
-	//gpacalculator;
-	//system("pause");
-	//return 0;
-
-
+void calGPA()
 {
 	double grade;
 
@@ -33,6 +26,4 @@ int main()
 	else
 		cout << "repeat the class" << endl;
 	system("pause");
-	return 0;
 }
-
