@@ -41,6 +41,30 @@ int main()
 
 void input()
 {
+	system("cls");
+	string fname;
+	string lname;
+	int age;
+	int stdID;
+
+	cout << "input first name";
+	cin >> fname;
+	cout << "input last name";
+	cin >> lname;
+	cout << "input student age";
+	cin >> age;
+	//cout << "input student date of birth";
+	//cin >> date;
+	cout << "enter student id";
+	cin >> stdID;
+
+	string stdID2 = to_string(stdID);
+	stdID2.append(".txt");
+
+	ofstream newStudent(stdID2);
+	newStudent << fname << " " << lname << " " << stdID << " " << age <<endl;
+	newStudent.close;
+
 
 }
 
