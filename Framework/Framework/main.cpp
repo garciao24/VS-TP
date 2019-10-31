@@ -65,11 +65,21 @@ void input()
 	newStudent << fname << " " << lname << " " << stdID << " " << age <<endl;
 	newStudent.close;
 
-
 }
 
 void search()
 {
+	system("cls");
+	string fname;
+	string lname;
+	int age;
+	int stdID;
+
+	cout << "enter student id"; 
+	cin >> stdID;
+	string stdID2 = to_string(stdID);
+	stdID2.append(".txt");
+
 
 }
 
@@ -78,7 +88,7 @@ void edit()
 
 }
 
-void display();
+void display()
 {
 
 }
