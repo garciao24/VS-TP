@@ -1,20 +1,17 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include<vector>
 using namespace std;
 
-struct schedule
-{
-	schedule(string bi, unsigned int io, unsigned int ni, double pi) :classname(bi), grade1(io), grade2(ni), grade3(pi) {}
+struct schedule{
+	schedule(string bi,int x,  int io,  int ni,  int pi) :classname(bi),classnum(x), grade1(io), grade2(ni), grade3(pi) {}
 	string classname;
 	int classnum;
 	int grade1;
 	int grade2;
 	int grade3;
-
 };
-
-
 
 
 void input()
@@ -44,6 +41,62 @@ void input()
 	newStudent << fname << " " << lname << " " << stdID << " " << age <<""<<count<<endl;
 	newStudent.close();
 
+	
+
+}
+
+
+void addclass()
+{
+	vector<schedule> shd;
+	cout << "Add student schedule\n";
+	int count=0;
+	int choice;
+	string depa;
+	int grade1;
+	int grade2;
+	int grade3;
+	int num;
+	while (true)
+	{
+		cout << "to continue to Add class to student schedule press 1\n";
+		cout << "to finish press 2\n";
+		cin >> choice;
+		if (count >= 5)
+		{
+			cout << "max allowed classes reached\n";
+			return;
+		}
+		switch (choice)
+		{
+		case 1:
+			cout << "input class departments (CS....etc.)\n";
+			cin >> depa;
+			
+			cout << "Enter class course number\n";
+			cin >> num;
+			cout << "enter grade 1\n";
+			cin >> grade1;
+			cout << "enter grade 2\n";
+			cin >> grade2;
+			cout << "enter grade 3\n";
+			cin >> grade3;
+			shd.push_back(schedule(depa,num,grade1,grade2,grade3));
+			count++;
+			break;
+
+		case 2:
+			if (1 > count)
+			{
+				cout << "must have atleast one class\n";
+				break;
+			}
+			return;
+		default:
+			cout << "invalid input try again;\n";
+			break;
+		}
+	}
 }
 
 void search()
