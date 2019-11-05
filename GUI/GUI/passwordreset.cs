@@ -26,7 +26,7 @@ namespace GUI
             int numeric = 0;
             if (idtextbox.Text == string.Empty || newpasswordtextbox.Text == string.Empty || (idtextbox.Text == string.Empty && newpasswordtextbox.Text == string.Empty))
             {
-                errormessagelabel.Text = "Feilds cannot be left blank.";
+                errormessagelabel.Text = "Fields cannot be left blank.";
                 idtextbox.Text = string.Empty;
                 newpasswordtextbox.Text = string.Empty;
             }
