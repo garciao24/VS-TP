@@ -54,6 +54,7 @@
             this.logoutbutton.TabIndex = 18;
             this.logoutbutton.Text = "Logout";
             this.logoutbutton.UseVisualStyleBackColor = true;
+            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
             // 
             // gpabutton
             // 

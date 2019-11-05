@@ -37,5 +37,11 @@ namespace GUI
         {
 
         }
+
+        private void logoutbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new login().Show();
+        }
     }
 }

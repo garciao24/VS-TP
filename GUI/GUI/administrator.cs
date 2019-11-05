@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class administrator : Form
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wolf1\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\garciao24\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
         public administrator()
         {
             InitializeComponent();
@@ -80,6 +80,12 @@ namespace GUI
         private void enrolledcoursesgridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new administratorMenu().Show();
         }
     }
 }

@@ -108,7 +108,7 @@
             this.resetpasswordbutton.Name = "resetpasswordbutton";
             this.resetpasswordbutton.Size = new System.Drawing.Size(122, 23);
             this.resetpasswordbutton.TabIndex = 5;
-            this.resetpasswordbutton.Text = "Forgot your password?";
+            this.resetpasswordbutton.Text = "Reset password";
             this.resetpasswordbutton.UseVisualStyleBackColor = false;
             this.resetpasswordbutton.Click += new System.EventHandler(this.resetpasswordbutton_Click);
             // 
@@ -165,7 +165,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(92, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(222, 141);
             this.pictureBox1.TabIndex = 8;
@@ -176,7 +176,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(318, 47);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(82, 114);
             this.pictureBox2.TabIndex = 13;
