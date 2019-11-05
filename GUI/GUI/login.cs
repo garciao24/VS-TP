@@ -59,7 +59,7 @@ namespace GUI
                 else if (dataSet.Tables[0].Rows[0][0].ToString() == "admin")
                 {
                     this.Hide();
-                    new administrator().Show();
+                    new administratorMenu().Show();
                 }
                 else
                 {

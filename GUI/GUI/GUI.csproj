@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>GUI</RootNamespace>
     <AssemblyName>GUI</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -27,6 +27,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -66,6 +67,12 @@
     </Compile>
     <Compile Include="administrator.designer.cs">
       <DependentUpon>administrator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="administratorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="administratorMenu.Designer.cs">
+      <DependentUpon>administratorMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="courselist.cs">
       <SubType>Form</SubType>
@@ -108,6 +115,9 @@
     <EmbeddedResource Include="administrator.resx">
       <DependentUpon>administrator.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="administratorMenu.resx">
+      <DependentUpon>administratorMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="courselist.resx">
       <DependentUpon>courselist.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +141,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="updateinformation.resx">
       <DependentUpon>updateinformation.cs</DependentUpon>
