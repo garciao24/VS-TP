@@ -13,7 +13,7 @@ namespace GUI
 {
     public partial class courselist : Form
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wolf1\source\repos\GUI\GUI\Database.mdf;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wolf1\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
         public courselist(string username)
         {
             InitializeComponent();
