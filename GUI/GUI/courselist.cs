@@ -14,6 +14,7 @@ namespace GUI
     public partial class courselist : Form
     {
         SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\garciao24\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
+
         public courselist(string username)
         {
             InitializeComponent();
@@ -43,6 +44,11 @@ namespace GUI
             }
             sqlConnection.Close();
             secretlabel.Text = username;
+        }
+
+        public courselist()
+        {
+            throw new System.NotImplementedException();
         }
 
         private void backbutton_Click(object sender, EventArgs e)

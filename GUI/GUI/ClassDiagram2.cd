@@ -14,6 +14,13 @@
       <FileName>administratorMenu.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="GUI.courselist" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEBAAAAACACAAAAAACAAAASAQAkmAAAAQIAAAAAAgA=</HashCode>
+      <FileName>courselist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="GUI.admin" Collapsed="true">
     <Position X="2.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
