@@ -44,4 +44,8 @@ namespace GUI
             new login().Show();
         }
     }
+
+    public interface admin
+    {
+    }
 }

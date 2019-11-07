@@ -53,4 +53,10 @@
       <Filter>Resource Files</Filter>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagramTest.cd">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="ClassDiagramTest1.cd" />
+  </ItemGroup>
 </Project>

@@ -172,6 +172,10 @@
       <DependentUpon>Student.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagramTest.cd" />
+    <None Include="ClassDiagramTest1.cd" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
