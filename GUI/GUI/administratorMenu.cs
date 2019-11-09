@@ -35,13 +35,20 @@ namespace GUI
 
         private void enrolledclassesbutton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new AdminCourse().Show();
         }
 
         private void logoutbutton_Click(object sender, EventArgs e)
         {
             this.Hide();
             new login().Show();
+        }
+
+        private void gpabutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new StudentAdminView().Show();
         }
     }
 

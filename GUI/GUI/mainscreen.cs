@@ -14,7 +14,7 @@ namespace GUI
 {
     public partial class mainscreen : Form
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\garciao24\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wolf1\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
         public mainscreen(string username)
         {
             InitializeComponent();

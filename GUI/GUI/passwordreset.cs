@@ -14,7 +14,7 @@ namespace GUI
 {
     public partial class changepassword : Form
     {
-        SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\garciao24\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wolf1\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
         public changepassword()
         {
             InitializeComponent();
@@ -93,6 +93,11 @@ namespace GUI
         }
 
         private void errormessagelabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void changepassword_Load(object sender, EventArgs e)
         {
 
         }
