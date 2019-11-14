@@ -123,6 +123,7 @@
             this.Controls.Add(this.enrolledclassesbutton);
             this.Controls.Add(this.ViewInfo);
             this.Controls.Add(this.welcomelabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "administratorMenu";
             this.Text = "administratorMenu";

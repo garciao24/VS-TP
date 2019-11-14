@@ -150,6 +150,7 @@
             this.Controls.Add(this.logoutbutton);
             this.Controls.Add(this.backbutton);
             this.Controls.Add(this.enrolledcoursesgroupbox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "courselist";
             this.Text = "Current Courses";

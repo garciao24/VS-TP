@@ -285,6 +285,7 @@
             this.Controls.Add(this.logoutbutton);
             this.Controls.Add(this.enrolledcoursesgroupbox);
             this.Controls.Add(this.enrolledstudentsgroupbox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "administrator";
             this.Text = "Administrator Mainscreen";

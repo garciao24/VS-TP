@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminCourse));
             System.Windows.Forms.Label cIDLabel;
             System.Windows.Forms.Label departmentLabel;
             System.Windows.Forms.Label nameLabel;
@@ -38,6 +37,7 @@
             System.Windows.Forms.Label timeendLabel;
             System.Windows.Forms.Label professorLabel;
             System.Windows.Forms.Label roomLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminCourse));
             this.databaseDataSet = new GUI.DatabaseDataSet();
             this.courseBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.courseTableAdapter = new GUI.DatabaseDataSetTableAdapters.courseTableAdapter();
@@ -88,6 +88,78 @@
             this.courseBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.courseDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // cIDLabel
+            // 
+            cIDLabel.AutoSize = true;
+            cIDLabel.Location = new System.Drawing.Point(1354, 54);
+            cIDLabel.Name = "cIDLabel";
+            cIDLabel.Size = new System.Drawing.Size(42, 20);
+            cIDLabel.TabIndex = 3;
+            cIDLabel.Text = "c ID:";
+            // 
+            // departmentLabel
+            // 
+            departmentLabel.AutoSize = true;
+            departmentLabel.Location = new System.Drawing.Point(1354, 86);
+            departmentLabel.Name = "departmentLabel";
+            departmentLabel.Size = new System.Drawing.Size(95, 20);
+            departmentLabel.TabIndex = 5;
+            departmentLabel.Text = "department:";
+            // 
+            // nameLabel
+            // 
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new System.Drawing.Point(1354, 118);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new System.Drawing.Size(53, 20);
+            nameLabel.TabIndex = 7;
+            nameLabel.Text = "name:";
+            // 
+            // sectionLabel
+            // 
+            sectionLabel.AutoSize = true;
+            sectionLabel.Location = new System.Drawing.Point(1354, 150);
+            sectionLabel.Name = "sectionLabel";
+            sectionLabel.Size = new System.Drawing.Size(64, 20);
+            sectionLabel.TabIndex = 9;
+            sectionLabel.Text = "section:";
+            // 
+            // timestartLabel
+            // 
+            timestartLabel.AutoSize = true;
+            timestartLabel.Location = new System.Drawing.Point(1354, 182);
+            timestartLabel.Name = "timestartLabel";
+            timestartLabel.Size = new System.Drawing.Size(75, 20);
+            timestartLabel.TabIndex = 11;
+            timestartLabel.Text = "timestart:";
+            // 
+            // timeendLabel
+            // 
+            timeendLabel.AutoSize = true;
+            timeendLabel.Location = new System.Drawing.Point(1354, 214);
+            timeendLabel.Name = "timeendLabel";
+            timeendLabel.Size = new System.Drawing.Size(70, 20);
+            timeendLabel.TabIndex = 13;
+            timeendLabel.Text = "timeend:";
+            // 
+            // professorLabel
+            // 
+            professorLabel.AutoSize = true;
+            professorLabel.Location = new System.Drawing.Point(1354, 246);
+            professorLabel.Name = "professorLabel";
+            professorLabel.Size = new System.Drawing.Size(80, 20);
+            professorLabel.TabIndex = 15;
+            professorLabel.Text = "professor:";
+            // 
+            // roomLabel
+            // 
+            roomLabel.AutoSize = true;
+            roomLabel.Location = new System.Drawing.Point(1354, 278);
+            roomLabel.Name = "roomLabel";
+            roomLabel.Size = new System.Drawing.Size(49, 20);
+            roomLabel.TabIndex = 17;
+            roomLabel.Text = "room:";
             // 
             // databaseDataSet
             // 
@@ -333,15 +405,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // cIDLabel
-            // 
-            cIDLabel.AutoSize = true;
-            cIDLabel.Location = new System.Drawing.Point(1354, 54);
-            cIDLabel.Name = "cIDLabel";
-            cIDLabel.Size = new System.Drawing.Size(42, 20);
-            cIDLabel.TabIndex = 3;
-            cIDLabel.Text = "c ID:";
-            // 
             // cIDTextBox
             // 
             this.cIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "cID", true));
@@ -349,15 +412,6 @@
             this.cIDTextBox.Name = "cIDTextBox";
             this.cIDTextBox.Size = new System.Drawing.Size(100, 26);
             this.cIDTextBox.TabIndex = 4;
-            // 
-            // departmentLabel
-            // 
-            departmentLabel.AutoSize = true;
-            departmentLabel.Location = new System.Drawing.Point(1354, 86);
-            departmentLabel.Name = "departmentLabel";
-            departmentLabel.Size = new System.Drawing.Size(95, 20);
-            departmentLabel.TabIndex = 5;
-            departmentLabel.Text = "department:";
             // 
             // departmentTextBox
             // 
@@ -367,15 +421,6 @@
             this.departmentTextBox.Size = new System.Drawing.Size(100, 26);
             this.departmentTextBox.TabIndex = 6;
             // 
-            // nameLabel
-            // 
-            nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(1354, 118);
-            nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(53, 20);
-            nameLabel.TabIndex = 7;
-            nameLabel.Text = "name:";
-            // 
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "name", true));
@@ -383,15 +428,6 @@
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(100, 26);
             this.nameTextBox.TabIndex = 8;
-            // 
-            // sectionLabel
-            // 
-            sectionLabel.AutoSize = true;
-            sectionLabel.Location = new System.Drawing.Point(1354, 150);
-            sectionLabel.Name = "sectionLabel";
-            sectionLabel.Size = new System.Drawing.Size(64, 20);
-            sectionLabel.TabIndex = 9;
-            sectionLabel.Text = "section:";
             // 
             // sectionTextBox
             // 
@@ -401,15 +437,6 @@
             this.sectionTextBox.Size = new System.Drawing.Size(100, 26);
             this.sectionTextBox.TabIndex = 10;
             // 
-            // timestartLabel
-            // 
-            timestartLabel.AutoSize = true;
-            timestartLabel.Location = new System.Drawing.Point(1354, 182);
-            timestartLabel.Name = "timestartLabel";
-            timestartLabel.Size = new System.Drawing.Size(75, 20);
-            timestartLabel.TabIndex = 11;
-            timestartLabel.Text = "timestart:";
-            // 
             // timestartTextBox
             // 
             this.timestartTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "timestart", true));
@@ -417,15 +444,6 @@
             this.timestartTextBox.Name = "timestartTextBox";
             this.timestartTextBox.Size = new System.Drawing.Size(100, 26);
             this.timestartTextBox.TabIndex = 12;
-            // 
-            // timeendLabel
-            // 
-            timeendLabel.AutoSize = true;
-            timeendLabel.Location = new System.Drawing.Point(1354, 214);
-            timeendLabel.Name = "timeendLabel";
-            timeendLabel.Size = new System.Drawing.Size(70, 20);
-            timeendLabel.TabIndex = 13;
-            timeendLabel.Text = "timeend:";
             // 
             // timeendTextBox
             // 
@@ -435,15 +453,6 @@
             this.timeendTextBox.Size = new System.Drawing.Size(100, 26);
             this.timeendTextBox.TabIndex = 14;
             // 
-            // professorLabel
-            // 
-            professorLabel.AutoSize = true;
-            professorLabel.Location = new System.Drawing.Point(1354, 246);
-            professorLabel.Name = "professorLabel";
-            professorLabel.Size = new System.Drawing.Size(80, 20);
-            professorLabel.TabIndex = 15;
-            professorLabel.Text = "professor:";
-            // 
             // professorTextBox
             // 
             this.professorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "professor", true));
@@ -451,15 +460,6 @@
             this.professorTextBox.Name = "professorTextBox";
             this.professorTextBox.Size = new System.Drawing.Size(100, 26);
             this.professorTextBox.TabIndex = 16;
-            // 
-            // roomLabel
-            // 
-            roomLabel.AutoSize = true;
-            roomLabel.Location = new System.Drawing.Point(1354, 278);
-            roomLabel.Name = "roomLabel";
-            roomLabel.Size = new System.Drawing.Size(49, 20);
-            roomLabel.TabIndex = 17;
-            roomLabel.Text = "room:";
             // 
             // roomTextBox
             // 
@@ -504,6 +504,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.courseDataGridView);
             this.Controls.Add(this.courseBindingNavigator);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "AdminCourse";
             this.Text = "AdminCourse";
             this.Load += new System.EventHandler(this.AdminCourse_Load);

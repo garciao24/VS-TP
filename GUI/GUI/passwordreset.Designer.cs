@@ -164,6 +164,7 @@
             this.ClientSize = new System.Drawing.Size(454, 211);
             this.Controls.Add(this.errormessagelabel);
             this.Controls.Add(this.changepasswordgroupbox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "changepassword";
             this.Text = "Password Reset Window";

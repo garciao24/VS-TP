@@ -191,6 +191,7 @@
             this.Controls.Add(this.currentgradesgroupbox);
             this.Controls.Add(this.secretlabel);
             this.Controls.Add(this.exitbutton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "gpa";
             this.Text = "GPA Calculator";
