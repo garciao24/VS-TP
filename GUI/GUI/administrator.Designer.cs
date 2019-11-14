@@ -71,6 +71,7 @@
             // enrolledstudentsgridview
             // 
             this.enrolledstudentsgridview.AllowUserToAddRows = false;
+            this.enrolledstudentsgridview.AllowUserToDeleteRows = false;
             this.enrolledstudentsgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.enrolledstudentsgridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.studentid,
@@ -84,6 +85,7 @@
             this.enrolledstudentsgridview.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.enrolledstudentsgridview.Location = new System.Drawing.Point(6, 19);
             this.enrolledstudentsgridview.Name = "enrolledstudentsgridview";
+            this.enrolledstudentsgridview.ReadOnly = true;
             this.enrolledstudentsgridview.RowHeadersWidth = 62;
             this.enrolledstudentsgridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.enrolledstudentsgridview.Size = new System.Drawing.Size(869, 195);
@@ -160,6 +162,7 @@
             // enrolledcoursesgridview
             // 
             this.enrolledcoursesgridview.AllowUserToAddRows = false;
+            this.enrolledcoursesgridview.AllowUserToDeleteRows = false;
             this.enrolledcoursesgridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.enrolledcoursesgridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cID,
@@ -173,6 +176,7 @@
             this.enrolledcoursesgridview.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.enrolledcoursesgridview.Location = new System.Drawing.Point(6, 19);
             this.enrolledcoursesgridview.Name = "enrolledcoursesgridview";
+            this.enrolledcoursesgridview.ReadOnly = true;
             this.enrolledcoursesgridview.RowHeadersWidth = 62;
             this.enrolledcoursesgridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.enrolledcoursesgridview.Size = new System.Drawing.Size(869, 186);
