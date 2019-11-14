@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class administratorMenu : Form
+    public partial class administratorMenu : login
     {
         public administratorMenu()
         {

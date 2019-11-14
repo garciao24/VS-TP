@@ -170,7 +170,6 @@
       <DependentUpon>updateinformation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="ClassDiagram1.cd" />
-    <None Include="ClassDiagram2.cd" />
     <None Include="DatabaseDataSet.xsc">
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </None>

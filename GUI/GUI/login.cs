@@ -13,10 +13,10 @@ using System.Data.SqlClient;
 
 namespace GUI
 {
-    public partial class login : Form
+    public partial class login : mainscreen
     {
         SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wolf1\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
-        public login()                                                                                              
+        public login()
         {
             InitializeComponent();
             string username = usernametextbox.Text;
@@ -68,7 +68,7 @@ namespace GUI
                 }
             }
             sqlConnection.Close();
-        } 
+        }
 
         private void exitbutton_Click(object sender, EventArgs e)
         {
@@ -83,7 +83,7 @@ namespace GUI
             }
             else
             {
-                passwordtextbox.UseSystemPasswordChar = true; 
+                passwordtextbox.UseSystemPasswordChar = true;
             }
         }
 
