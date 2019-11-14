@@ -64,27 +64,24 @@
             // 
             // firstnametextbox
             // 
-            this.firstnametextbox.Location = new System.Drawing.Point(204, 57);
-            this.firstnametextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.firstnametextbox.Location = new System.Drawing.Point(136, 37);
             this.firstnametextbox.Name = "firstnametextbox";
-            this.firstnametextbox.Size = new System.Drawing.Size(150, 26);
+            this.firstnametextbox.Size = new System.Drawing.Size(101, 20);
             this.firstnametextbox.TabIndex = 0;
             // 
             // lastnametextbox
             // 
-            this.lastnametextbox.Location = new System.Drawing.Point(204, 94);
-            this.lastnametextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lastnametextbox.Location = new System.Drawing.Point(136, 61);
             this.lastnametextbox.Name = "lastnametextbox";
-            this.lastnametextbox.Size = new System.Drawing.Size(150, 26);
+            this.lastnametextbox.Size = new System.Drawing.Size(101, 20);
             this.lastnametextbox.TabIndex = 1;
             // 
             // firstnamelabel
             // 
             this.firstnamelabel.AutoSize = true;
-            this.firstnamelabel.Location = new System.Drawing.Point(105, 62);
-            this.firstnamelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.firstnamelabel.Location = new System.Drawing.Point(70, 40);
             this.firstnamelabel.Name = "firstnamelabel";
-            this.firstnamelabel.Size = new System.Drawing.Size(90, 20);
+            this.firstnamelabel.Size = new System.Drawing.Size(60, 13);
             this.firstnamelabel.TabIndex = 5;
             this.firstnamelabel.Text = "First Name:";
             this.firstnamelabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,10 +89,9 @@
             // lastnamelabel
             // 
             this.lastnamelabel.AutoSize = true;
-            this.lastnamelabel.Location = new System.Drawing.Point(104, 98);
-            this.lastnamelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lastnamelabel.Location = new System.Drawing.Point(69, 64);
             this.lastnamelabel.Name = "lastnamelabel";
-            this.lastnamelabel.Size = new System.Drawing.Size(90, 20);
+            this.lastnamelabel.Size = new System.Drawing.Size(61, 13);
             this.lastnamelabel.TabIndex = 6;
             this.lastnamelabel.Text = "Last Name:";
             this.lastnamelabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -103,6 +99,7 @@
             // currentinformationdatagrid
             // 
             this.currentinformationdatagrid.AllowUserToAddRows = false;
+            this.currentinformationdatagrid.AllowUserToDeleteRows = false;
             this.currentinformationdatagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.currentinformationdatagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.firstname,
@@ -111,12 +108,12 @@
             this.dob,
             this.phonenumber,
             this.email});
-            this.currentinformationdatagrid.Location = new System.Drawing.Point(9, 29);
-            this.currentinformationdatagrid.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.currentinformationdatagrid.Location = new System.Drawing.Point(6, 19);
             this.currentinformationdatagrid.Name = "currentinformationdatagrid";
+            this.currentinformationdatagrid.ReadOnly = true;
             this.currentinformationdatagrid.RowHeadersWidth = 62;
             this.currentinformationdatagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.currentinformationdatagrid.Size = new System.Drawing.Size(1070, 122);
+            this.currentinformationdatagrid.Size = new System.Drawing.Size(713, 79);
             this.currentinformationdatagrid.TabIndex = 7;
             // 
             // firstname
@@ -124,6 +121,7 @@
             this.firstname.HeaderText = "First Name";
             this.firstname.MinimumWidth = 8;
             this.firstname.Name = "firstname";
+            this.firstname.ReadOnly = true;
             this.firstname.Width = 150;
             // 
             // lastname
@@ -131,6 +129,7 @@
             this.lastname.HeaderText = "Last Name";
             this.lastname.MinimumWidth = 8;
             this.lastname.Name = "lastname";
+            this.lastname.ReadOnly = true;
             this.lastname.Width = 150;
             // 
             // gender
@@ -138,6 +137,7 @@
             this.gender.HeaderText = "Gender";
             this.gender.MinimumWidth = 8;
             this.gender.Name = "gender";
+            this.gender.ReadOnly = true;
             this.gender.Width = 75;
             // 
             // dob
@@ -145,6 +145,7 @@
             this.dob.HeaderText = "Date of Birth";
             this.dob.MinimumWidth = 8;
             this.dob.Name = "dob";
+            this.dob.ReadOnly = true;
             this.dob.Width = 75;
             // 
             // phonenumber
@@ -152,6 +153,7 @@
             this.phonenumber.HeaderText = "Phone Number";
             this.phonenumber.MinimumWidth = 8;
             this.phonenumber.Name = "phonenumber";
+            this.phonenumber.ReadOnly = true;
             this.phonenumber.Width = 125;
             // 
             // email
@@ -159,6 +161,7 @@
             this.email.HeaderText = "E-Mail";
             this.email.MinimumWidth = 8;
             this.email.Name = "email";
+            this.email.ReadOnly = true;
             this.email.Width = 175;
             // 
             // updateinformationgroupbox
@@ -182,11 +185,9 @@
             this.updateinformationgroupbox.Controls.Add(this.firstnametextbox);
             this.updateinformationgroupbox.Controls.Add(this.lastnametextbox);
             this.updateinformationgroupbox.Controls.Add(this.firstnamelabel);
-            this.updateinformationgroupbox.Location = new System.Drawing.Point(18, 214);
-            this.updateinformationgroupbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.updateinformationgroupbox.Location = new System.Drawing.Point(12, 139);
             this.updateinformationgroupbox.Name = "updateinformationgroupbox";
-            this.updateinformationgroupbox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.updateinformationgroupbox.Size = new System.Drawing.Size(1088, 220);
+            this.updateinformationgroupbox.Size = new System.Drawing.Size(725, 143);
             this.updateinformationgroupbox.TabIndex = 8;
             this.updateinformationgroupbox.TabStop = false;
             this.updateinformationgroupbox.Text = "Update Information";
@@ -195,19 +196,17 @@
             // secretlabel
             // 
             this.secretlabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.secretlabel.Location = new System.Drawing.Point(24, 178);
-            this.secretlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.secretlabel.Location = new System.Drawing.Point(16, 116);
             this.secretlabel.Name = "secretlabel";
-            this.secretlabel.Size = new System.Drawing.Size(69, 20);
+            this.secretlabel.Size = new System.Drawing.Size(46, 13);
             this.secretlabel.TabIndex = 26;
             this.secretlabel.Visible = false;
             // 
             // dobtextbox
             // 
-            this.dobtextbox.Location = new System.Drawing.Point(204, 131);
-            this.dobtextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dobtextbox.Location = new System.Drawing.Point(136, 85);
             this.dobtextbox.Name = "dobtextbox";
-            this.dobtextbox.Size = new System.Drawing.Size(150, 26);
+            this.dobtextbox.Size = new System.Drawing.Size(101, 20);
             this.dobtextbox.TabIndex = 25;
             // 
             // phonenumberinformation
@@ -215,29 +214,26 @@
             this.phonenumberinformation.AutoSize = true;
             this.phonenumberinformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.phonenumberinformation.ForeColor = System.Drawing.Color.Gray;
-            this.phonenumberinformation.Location = new System.Drawing.Point(423, 155);
-            this.phonenumberinformation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.phonenumberinformation.Location = new System.Drawing.Point(282, 101);
             this.phonenumberinformation.Name = "phonenumberinformation";
-            this.phonenumberinformation.Size = new System.Drawing.Size(98, 17);
+            this.phonenumberinformation.Size = new System.Drawing.Size(61, 12);
             this.phonenumberinformation.TabIndex = 24;
             this.phonenumberinformation.Text = "###-###-####";
             this.phonenumberinformation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // emailtextbox
             // 
-            this.emailtextbox.Location = new System.Drawing.Point(552, 95);
-            this.emailtextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.emailtextbox.Location = new System.Drawing.Point(368, 62);
             this.emailtextbox.Name = "emailtextbox";
-            this.emailtextbox.Size = new System.Drawing.Size(349, 26);
+            this.emailtextbox.Size = new System.Drawing.Size(234, 20);
             this.emailtextbox.TabIndex = 23;
             // 
             // emaillabel
             // 
             this.emaillabel.AutoSize = true;
-            this.emaillabel.Location = new System.Drawing.Point(484, 100);
-            this.emaillabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.emaillabel.Location = new System.Drawing.Point(323, 65);
             this.emaillabel.Name = "emaillabel";
-            this.emaillabel.Size = new System.Drawing.Size(57, 20);
+            this.emaillabel.Size = new System.Drawing.Size(39, 13);
             this.emaillabel.TabIndex = 22;
             this.emaillabel.Text = "E-Mail:";
             this.emaillabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -251,19 +247,17 @@
             "Female",
             "Male",
             "Other"});
-            this.gendercombobox.Location = new System.Drawing.Point(552, 57);
-            this.gendercombobox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gendercombobox.Location = new System.Drawing.Point(368, 37);
             this.gendercombobox.Name = "gendercombobox";
-            this.gendercombobox.Size = new System.Drawing.Size(148, 28);
+            this.gendercombobox.Size = new System.Drawing.Size(100, 21);
             this.gendercombobox.TabIndex = 21;
             // 
             // genderlabel
             // 
             this.genderlabel.AutoSize = true;
-            this.genderlabel.Location = new System.Drawing.Point(476, 62);
-            this.genderlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.genderlabel.Location = new System.Drawing.Point(317, 40);
             this.genderlabel.Name = "genderlabel";
-            this.genderlabel.Size = new System.Drawing.Size(67, 20);
+            this.genderlabel.Size = new System.Drawing.Size(45, 13);
             this.genderlabel.TabIndex = 20;
             this.genderlabel.Text = "Gender:";
             this.genderlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -273,20 +267,18 @@
             this.DOBlabelinformation.AutoSize = true;
             this.DOBlabelinformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DOBlabelinformation.ForeColor = System.Drawing.Color.Gray;
-            this.DOBlabelinformation.Location = new System.Drawing.Point(93, 158);
-            this.DOBlabelinformation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DOBlabelinformation.Location = new System.Drawing.Point(62, 103);
             this.DOBlabelinformation.Name = "DOBlabelinformation";
-            this.DOBlabelinformation.Size = new System.Drawing.Size(94, 17);
+            this.DOBlabelinformation.Size = new System.Drawing.Size(63, 12);
             this.DOBlabelinformation.TabIndex = 17;
             this.DOBlabelinformation.Text = "MM/DD/YYYY";
             this.DOBlabelinformation.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // exitbutton
             // 
-            this.exitbutton.Location = new System.Drawing.Point(940, 163);
-            this.exitbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.exitbutton.Location = new System.Drawing.Point(627, 106);
             this.exitbutton.Name = "exitbutton";
-            this.exitbutton.Size = new System.Drawing.Size(112, 35);
+            this.exitbutton.Size = new System.Drawing.Size(75, 23);
             this.exitbutton.TabIndex = 16;
             this.exitbutton.Text = "Logout";
             this.exitbutton.UseVisualStyleBackColor = true;
@@ -294,10 +286,9 @@
             // 
             // backbutton
             // 
-            this.backbutton.Location = new System.Drawing.Point(940, 118);
-            this.backbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.backbutton.Location = new System.Drawing.Point(627, 77);
             this.backbutton.Name = "backbutton";
-            this.backbutton.Size = new System.Drawing.Size(112, 35);
+            this.backbutton.Size = new System.Drawing.Size(75, 23);
             this.backbutton.TabIndex = 15;
             this.backbutton.Text = "Back";
             this.backbutton.UseVisualStyleBackColor = true;
@@ -305,10 +296,9 @@
             // 
             // updatebutton
             // 
-            this.updatebutton.Location = new System.Drawing.Point(940, 29);
-            this.updatebutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.updatebutton.Location = new System.Drawing.Point(627, 19);
             this.updatebutton.Name = "updatebutton";
-            this.updatebutton.Size = new System.Drawing.Size(112, 35);
+            this.updatebutton.Size = new System.Drawing.Size(75, 23);
             this.updatebutton.TabIndex = 14;
             this.updatebutton.Text = "Update";
             this.updatebutton.UseVisualStyleBackColor = true;
@@ -316,10 +306,9 @@
             // 
             // clearbutton
             // 
-            this.clearbutton.Location = new System.Drawing.Point(940, 74);
-            this.clearbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.clearbutton.Location = new System.Drawing.Point(627, 48);
             this.clearbutton.Name = "clearbutton";
-            this.clearbutton.Size = new System.Drawing.Size(112, 35);
+            this.clearbutton.Size = new System.Drawing.Size(75, 23);
             this.clearbutton.TabIndex = 13;
             this.clearbutton.Text = "Clear";
             this.clearbutton.UseVisualStyleBackColor = true;
@@ -327,19 +316,17 @@
             // 
             // phonenumbertextbox
             // 
-            this.phonenumbertextbox.Location = new System.Drawing.Point(552, 131);
-            this.phonenumbertextbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.phonenumbertextbox.Location = new System.Drawing.Point(368, 85);
             this.phonenumbertextbox.Name = "phonenumbertextbox";
-            this.phonenumbertextbox.Size = new System.Drawing.Size(148, 26);
+            this.phonenumbertextbox.Size = new System.Drawing.Size(100, 20);
             this.phonenumbertextbox.TabIndex = 11;
             // 
             // phonenumberlabel
             // 
             this.phonenumberlabel.AutoSize = true;
-            this.phonenumberlabel.Location = new System.Drawing.Point(422, 135);
-            this.phonenumberlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.phonenumberlabel.Location = new System.Drawing.Point(281, 88);
             this.phonenumberlabel.Name = "phonenumberlabel";
-            this.phonenumberlabel.Size = new System.Drawing.Size(119, 20);
+            this.phonenumberlabel.Size = new System.Drawing.Size(81, 13);
             this.phonenumberlabel.TabIndex = 8;
             this.phonenumberlabel.Text = "Phone Number:";
             this.phonenumberlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -347,10 +334,9 @@
             // DOBlabel
             // 
             this.DOBlabel.AutoSize = true;
-            this.DOBlabel.Location = new System.Drawing.Point(92, 138);
-            this.DOBlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DOBlabel.Location = new System.Drawing.Point(61, 90);
             this.DOBlabel.Name = "DOBlabel";
-            this.DOBlabel.Size = new System.Drawing.Size(103, 20);
+            this.DOBlabel.Size = new System.Drawing.Size(69, 13);
             this.DOBlabel.TabIndex = 7;
             this.DOBlabel.Text = "Date of Birth:";
             this.DOBlabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -358,11 +344,9 @@
             // currentinformationgroupbox
             // 
             this.currentinformationgroupbox.Controls.Add(this.currentinformationdatagrid);
-            this.currentinformationgroupbox.Location = new System.Drawing.Point(18, 45);
-            this.currentinformationgroupbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.currentinformationgroupbox.Location = new System.Drawing.Point(12, 29);
             this.currentinformationgroupbox.Name = "currentinformationgroupbox";
-            this.currentinformationgroupbox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.currentinformationgroupbox.Size = new System.Drawing.Size(1088, 160);
+            this.currentinformationgroupbox.Size = new System.Drawing.Size(725, 104);
             this.currentinformationgroupbox.TabIndex = 12;
             this.currentinformationgroupbox.TabStop = false;
             this.currentinformationgroupbox.Text = "Current Information";
@@ -371,22 +355,20 @@
             // 
             this.errormessagelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.errormessagelabel.ForeColor = System.Drawing.Color.Red;
-            this.errormessagelabel.Location = new System.Drawing.Point(18, 20);
-            this.errormessagelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.errormessagelabel.Location = new System.Drawing.Point(12, 13);
             this.errormessagelabel.Name = "errormessagelabel";
-            this.errormessagelabel.Size = new System.Drawing.Size(1088, 20);
+            this.errormessagelabel.Size = new System.Drawing.Size(725, 13);
             this.errormessagelabel.TabIndex = 13;
             this.errormessagelabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // updateinformation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1124, 452);
+            this.ClientSize = new System.Drawing.Size(749, 294);
             this.Controls.Add(this.errormessagelabel);
             this.Controls.Add(this.currentinformationgroupbox);
             this.Controls.Add(this.updateinformationgroupbox);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "updateinformation";
             this.Text = "Update Information";
             ((System.ComponentModel.ISupportInitialize)(this.currentinformationdatagrid)).EndInit();

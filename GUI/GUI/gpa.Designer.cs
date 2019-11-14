@@ -69,6 +69,7 @@
             // viewgradegridview
             // 
             this.viewgradegridview.AllowUserToAddRows = false;
+            this.viewgradegridview.AllowUserToDeleteRows = false;
             this.viewgradegridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.viewgradegridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.department,
@@ -77,6 +78,7 @@
             this.grade});
             this.viewgradegridview.Location = new System.Drawing.Point(21, 19);
             this.viewgradegridview.Name = "viewgradegridview";
+            this.viewgradegridview.ReadOnly = true;
             this.viewgradegridview.RowHeadersWidth = 62;
             this.viewgradegridview.Size = new System.Drawing.Size(456, 121);
             this.viewgradegridview.TabIndex = 0;
