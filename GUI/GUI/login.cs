@@ -35,7 +35,7 @@ namespace GUI
         {
             if (usernametextbox.Text == string.Empty || passwordtextbox.Text == string.Empty || (usernametextbox.Text == string.Empty && passwordtextbox.Text == string.Empty))
             {
-                errormessagelabel.Text = "Feilds cannot be left blank.";
+                errormessagelabel.Text = "Fields cannot be left blank.";
                 usernametextbox.Text = string.Empty;
                 passwordtextbox.Text = string.Empty;
             }
@@ -109,6 +109,16 @@ namespace GUI
         }
 
         private void login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void errormessagelabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logingroupbox_Enter(object sender, EventArgs e)
         {
 
         }

@@ -113,8 +113,9 @@
             this.studentBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.studentBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.studentBindingNavigator.Name = "studentBindingNavigator";
+            this.studentBindingNavigator.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.studentBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.studentBindingNavigator.Size = new System.Drawing.Size(979, 31);
+            this.studentBindingNavigator.Size = new System.Drawing.Size(965, 31);
             this.studentBindingNavigator.TabIndex = 0;
             this.studentBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -309,7 +310,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(913, 218);
+            this.button1.Location = new System.Drawing.Point(897, 192);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(54, 27);
@@ -322,13 +323,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(979, 258);
+            this.AutoSize = true;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.ClientSize = new System.Drawing.Size(965, 226);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.studentDataGridView);
             this.Controls.Add(this.studentBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "StudentAdminView";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Text = "StudentAdminView";
             this.Load += new System.EventHandler(this.StudentAdminView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
