@@ -92,72 +92,80 @@
             // cIDLabel
             // 
             cIDLabel.AutoSize = true;
-            cIDLabel.Location = new System.Drawing.Point(1354, 54);
+            cIDLabel.Location = new System.Drawing.Point(903, 35);
+            cIDLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             cIDLabel.Name = "cIDLabel";
-            cIDLabel.Size = new System.Drawing.Size(42, 20);
+            cIDLabel.Size = new System.Drawing.Size(30, 13);
             cIDLabel.TabIndex = 3;
             cIDLabel.Text = "c ID:";
             // 
             // departmentLabel
             // 
             departmentLabel.AutoSize = true;
-            departmentLabel.Location = new System.Drawing.Point(1354, 86);
+            departmentLabel.Location = new System.Drawing.Point(903, 56);
+            departmentLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             departmentLabel.Name = "departmentLabel";
-            departmentLabel.Size = new System.Drawing.Size(95, 20);
+            departmentLabel.Size = new System.Drawing.Size(63, 13);
             departmentLabel.TabIndex = 5;
             departmentLabel.Text = "department:";
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(1354, 118);
+            nameLabel.Location = new System.Drawing.Point(903, 77);
+            nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(53, 20);
+            nameLabel.Size = new System.Drawing.Size(36, 13);
             nameLabel.TabIndex = 7;
             nameLabel.Text = "name:";
             // 
             // sectionLabel
             // 
             sectionLabel.AutoSize = true;
-            sectionLabel.Location = new System.Drawing.Point(1354, 150);
+            sectionLabel.Location = new System.Drawing.Point(903, 97);
+            sectionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             sectionLabel.Name = "sectionLabel";
-            sectionLabel.Size = new System.Drawing.Size(64, 20);
+            sectionLabel.Size = new System.Drawing.Size(44, 13);
             sectionLabel.TabIndex = 9;
             sectionLabel.Text = "section:";
             // 
             // timestartLabel
             // 
             timestartLabel.AutoSize = true;
-            timestartLabel.Location = new System.Drawing.Point(1354, 182);
+            timestartLabel.Location = new System.Drawing.Point(903, 118);
+            timestartLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             timestartLabel.Name = "timestartLabel";
-            timestartLabel.Size = new System.Drawing.Size(75, 20);
+            timestartLabel.Size = new System.Drawing.Size(49, 13);
             timestartLabel.TabIndex = 11;
             timestartLabel.Text = "timestart:";
             // 
             // timeendLabel
             // 
             timeendLabel.AutoSize = true;
-            timeendLabel.Location = new System.Drawing.Point(1354, 214);
+            timeendLabel.Location = new System.Drawing.Point(903, 139);
+            timeendLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             timeendLabel.Name = "timeendLabel";
-            timeendLabel.Size = new System.Drawing.Size(70, 20);
+            timeendLabel.Size = new System.Drawing.Size(47, 13);
             timeendLabel.TabIndex = 13;
             timeendLabel.Text = "timeend:";
             // 
             // professorLabel
             // 
             professorLabel.AutoSize = true;
-            professorLabel.Location = new System.Drawing.Point(1354, 246);
+            professorLabel.Location = new System.Drawing.Point(903, 160);
+            professorLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             professorLabel.Name = "professorLabel";
-            professorLabel.Size = new System.Drawing.Size(80, 20);
+            professorLabel.Size = new System.Drawing.Size(53, 13);
             professorLabel.TabIndex = 15;
             professorLabel.Text = "professor:";
             // 
             // roomLabel
             // 
             roomLabel.AutoSize = true;
-            roomLabel.Location = new System.Drawing.Point(1354, 278);
+            roomLabel.Location = new System.Drawing.Point(903, 181);
+            roomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             roomLabel.Name = "roomLabel";
-            roomLabel.Size = new System.Drawing.Size(49, 20);
+            roomLabel.Size = new System.Drawing.Size(33, 13);
             roomLabel.TabIndex = 17;
             roomLabel.Text = "room:";
             // 
@@ -210,7 +218,7 @@
             this.courseBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.courseBindingNavigator.Name = "courseBindingNavigator";
             this.courseBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.courseBindingNavigator.Size = new System.Drawing.Size(1583, 33);
+            this.courseBindingNavigator.Size = new System.Drawing.Size(869, 31);
             this.courseBindingNavigator.TabIndex = 0;
             this.courseBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -220,13 +228,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(34, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(54, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -236,7 +244,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(34, 28);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -245,7 +253,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(34, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -254,28 +262,27 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(34, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 33);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 31);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(35, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 33);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -283,7 +290,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(34, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -292,20 +299,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(34, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(28, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 33);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // courseBindingNavigatorSaveItem
             // 
             this.courseBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.courseBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("courseBindingNavigatorSaveItem.Image")));
             this.courseBindingNavigatorSaveItem.Name = "courseBindingNavigatorSaveItem";
-            this.courseBindingNavigatorSaveItem.Size = new System.Drawing.Size(34, 28);
+            this.courseBindingNavigatorSaveItem.Size = new System.Drawing.Size(28, 28);
             this.courseBindingNavigatorSaveItem.Text = "Save Data";
             this.courseBindingNavigatorSaveItem.Click += new System.EventHandler(this.courseBindingNavigatorSaveItem_Click);
             // 
@@ -323,11 +330,12 @@
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8});
             this.courseDataGridView.DataSource = this.courseBindingSource;
-            this.courseDataGridView.Location = new System.Drawing.Point(21, 59);
+            this.courseDataGridView.Location = new System.Drawing.Point(14, 38);
+            this.courseDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.courseDataGridView.Name = "courseDataGridView";
             this.courseDataGridView.RowHeadersWidth = 62;
             this.courseDataGridView.RowTemplate.Height = 28;
-            this.courseDataGridView.Size = new System.Drawing.Size(1264, 319);
+            this.courseDataGridView.Size = new System.Drawing.Size(843, 207);
             this.courseDataGridView.TabIndex = 1;
             this.courseDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.courseDataGridView_CellContentClick);
             // 
@@ -397,9 +405,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1198, 403);
+            this.button1.Location = new System.Drawing.Point(799, 262);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 35);
+            this.button1.Size = new System.Drawing.Size(58, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
@@ -408,72 +417,81 @@
             // cIDTextBox
             // 
             this.cIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "cID", true));
-            this.cIDTextBox.Location = new System.Drawing.Point(1455, 51);
+            this.cIDTextBox.Location = new System.Drawing.Point(970, 33);
+            this.cIDTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cIDTextBox.Name = "cIDTextBox";
-            this.cIDTextBox.Size = new System.Drawing.Size(100, 26);
+            this.cIDTextBox.Size = new System.Drawing.Size(68, 20);
             this.cIDTextBox.TabIndex = 4;
             // 
             // departmentTextBox
             // 
             this.departmentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "department", true));
-            this.departmentTextBox.Location = new System.Drawing.Point(1455, 83);
+            this.departmentTextBox.Location = new System.Drawing.Point(970, 54);
+            this.departmentTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.departmentTextBox.Name = "departmentTextBox";
-            this.departmentTextBox.Size = new System.Drawing.Size(100, 26);
+            this.departmentTextBox.Size = new System.Drawing.Size(68, 20);
             this.departmentTextBox.TabIndex = 6;
             // 
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(1455, 115);
+            this.nameTextBox.Location = new System.Drawing.Point(970, 75);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(100, 26);
+            this.nameTextBox.Size = new System.Drawing.Size(68, 20);
             this.nameTextBox.TabIndex = 8;
             // 
             // sectionTextBox
             // 
             this.sectionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "section", true));
-            this.sectionTextBox.Location = new System.Drawing.Point(1455, 147);
+            this.sectionTextBox.Location = new System.Drawing.Point(970, 96);
+            this.sectionTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sectionTextBox.Name = "sectionTextBox";
-            this.sectionTextBox.Size = new System.Drawing.Size(100, 26);
+            this.sectionTextBox.Size = new System.Drawing.Size(68, 20);
             this.sectionTextBox.TabIndex = 10;
             // 
             // timestartTextBox
             // 
             this.timestartTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "timestart", true));
-            this.timestartTextBox.Location = new System.Drawing.Point(1455, 179);
+            this.timestartTextBox.Location = new System.Drawing.Point(970, 116);
+            this.timestartTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.timestartTextBox.Name = "timestartTextBox";
-            this.timestartTextBox.Size = new System.Drawing.Size(100, 26);
+            this.timestartTextBox.Size = new System.Drawing.Size(68, 20);
             this.timestartTextBox.TabIndex = 12;
             // 
             // timeendTextBox
             // 
             this.timeendTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "timeend", true));
-            this.timeendTextBox.Location = new System.Drawing.Point(1455, 211);
+            this.timeendTextBox.Location = new System.Drawing.Point(970, 137);
+            this.timeendTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.timeendTextBox.Name = "timeendTextBox";
-            this.timeendTextBox.Size = new System.Drawing.Size(100, 26);
+            this.timeendTextBox.Size = new System.Drawing.Size(68, 20);
             this.timeendTextBox.TabIndex = 14;
             // 
             // professorTextBox
             // 
             this.professorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "professor", true));
-            this.professorTextBox.Location = new System.Drawing.Point(1455, 243);
+            this.professorTextBox.Location = new System.Drawing.Point(970, 158);
+            this.professorTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.professorTextBox.Name = "professorTextBox";
-            this.professorTextBox.Size = new System.Drawing.Size(100, 26);
+            this.professorTextBox.Size = new System.Drawing.Size(68, 20);
             this.professorTextBox.TabIndex = 16;
             // 
             // roomTextBox
             // 
             this.roomTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.courseBindingSource, "room", true));
-            this.roomTextBox.Location = new System.Drawing.Point(1455, 275);
+            this.roomTextBox.Location = new System.Drawing.Point(970, 179);
+            this.roomTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.roomTextBox.Name = "roomTextBox";
-            this.roomTextBox.Size = new System.Drawing.Size(100, 26);
+            this.roomTextBox.Size = new System.Drawing.Size(68, 20);
             this.roomTextBox.TabIndex = 18;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1098, 403);
+            this.button2.Location = new System.Drawing.Point(732, 262);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 37);
+            this.button2.Size = new System.Drawing.Size(57, 24);
             this.button2.TabIndex = 19;
             this.button2.Text = "Update";
             this.button2.UseVisualStyleBackColor = true;
@@ -481,9 +499,9 @@
             // 
             // AdminCourse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1583, 452);
+            this.ClientSize = new System.Drawing.Size(869, 297);
             this.Controls.Add(this.button2);
             this.Controls.Add(cIDLabel);
             this.Controls.Add(this.cIDTextBox);
@@ -505,6 +523,7 @@
             this.Controls.Add(this.courseDataGridView);
             this.Controls.Add(this.courseBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdminCourse";
             this.Text = "AdminCourse";
             this.Load += new System.EventHandler(this.AdminCourse_Load);
