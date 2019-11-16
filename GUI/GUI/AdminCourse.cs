@@ -7,48 +7,72 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace GUI
 {
     public partial class AdminCourse : Form
     {
+
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wolf1\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
+
         public AdminCourse()
         {
             InitializeComponent();
         }
 
-        private void courseBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.courseBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.databaseDataSet);
-
-        }
-
         private void AdminCourse_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'databaseDataSet.course' table. You can move, or remove it, as needed.
-            this.courseTableAdapter.Fill(this.databaseDataSet.course);
-
+            disp_data();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new administratorMenu().Show();
+            sqlConnection.Open();
+
+            SqlCommand cmd = sqlConnection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "insert into course values('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + textBox4.Text + "','" + textBox5.Text + "','" + textBox6.Text + "','" + textBox7.Text + "','" + textBox8.Text + "') ";
+            cmd.ExecuteNonQuery();
+            sqlConnection.Close();
+            disp_data();
+            MessageBox.Show("Course added succesfully");
 
         }
 
-        private void courseDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void disp_data()
         {
+            sqlConnection.Open();
 
+            SqlCommand cmd = sqlConnection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select * from course";
+            cmd.ExecuteNonQuery();
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+
+            sqlConnection.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new administratorMenu().Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.courseBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.databaseDataSet);
+            sqlConnection.Open();
+
+            SqlCommand cmd = sqlConnection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "delete from course where ID'"+textBox1.Text+"'";
+            cmd.ExecuteNonQuery();
+            sqlConnection.Close();
+            disp_data();
+            MessageBox.Show("Course deleted succesfully");
         }
     }
 }
