@@ -37,5 +37,10 @@ namespace GUI
             this.Hide();
             new administratorMenu().Show();
         }
+
+        private void studentDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
