@@ -7,40 +7,52 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace GUI
 {
     public partial class StudentAdminView : Form
     {
+        SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wolf1\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
+        SqlDataAdapter sda;
+        SqlCommandBuilder scb;
+        DataTable dt;
+
         public StudentAdminView()
         {
             InitializeComponent();
         }
 
-        private void studentBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            this.Validate();
-            this.studentBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.databaseDataSet);
+            scb = new SqlCommandBuilder(sda);
+            sda.Update(dt);
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
 
         private void StudentAdminView_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'databaseDataSet.student' table. You can move, or remove it, as needed.
-            this.studentTableAdapter.Fill(this.databaseDataSet.student);
-
+            disp_data();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new administratorMenu().Show();
+            disp_data();
         }
 
-        private void studentDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+
+        public void disp_data()
         {
-
+            sda = new SqlDataAdapter(@"SELECT   sID, username, password, firstname, lastname, DOB, phonenumber, gender, email
+             FROM         student", sqlConnection);
+            dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
+
     }
 }
