@@ -54,5 +54,10 @@ namespace GUI
             dataGridView1.DataSource = dt;
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new administratorMenu().Show();
+        }
     }
 }
