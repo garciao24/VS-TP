@@ -88,7 +88,6 @@ namespace GUI
         private void button1_Click(object sender, EventArgs e)
         {
             scb = new SqlCommandBuilder(sda);
-            dataGridView1.DataSource = dt;
             sda.Update(dt);
         }
 
@@ -102,14 +101,6 @@ namespace GUI
 
         }
 
-        public void disp_data()
-        {
-            sda = new SqlDataAdapter(@"SELECT   courseID, StudentID, grade
-             FROM         enrollment", sqlConnection);
-            dt = new DataTable();
-            sda.Fill(dt);
-            dataGridView1.DataSource = dt;
-        }
 
         private void errormessagelabel_Click(object sender, EventArgs e)
         {

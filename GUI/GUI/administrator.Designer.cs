@@ -51,12 +51,10 @@
             this.logoutbutton = new System.Windows.Forms.Button();
             this.errormessagelabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.enrolledstudentsgroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.enrolledstudentsgridview)).BeginInit();
             this.enrolledcoursesgroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.enrolledcoursesgridview)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // enrolledstudentsgroupbox
@@ -259,7 +257,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1182, 257);
+            this.button1.Location = new System.Drawing.Point(807, 465);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
@@ -268,21 +266,11 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(924, 45);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(333, 195);
-            this.dataGridView1.TabIndex = 16;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
             // administrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1280, 497);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(919, 497);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.errormessagelabel);
             this.Controls.Add(this.logoutbutton);
@@ -295,7 +283,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.enrolledstudentsgridview)).EndInit();
             this.enrolledcoursesgroupbox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.enrolledcoursesgridview)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -325,6 +312,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn grade;
         private System.Windows.Forms.Label errormessagelabel;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
