@@ -26,6 +26,7 @@ namespace GUI
         private void button1_Click(object sender, EventArgs e)
         {
             scb = new SqlCommandBuilder(sda);
+            //dataGridView1.DataSource = dt;
             sda.Update(dt);
         }
 

@@ -14,6 +14,9 @@ namespace GUI
     public partial class administrator : Form
     {
         SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wolf1\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
+        SqlDataAdapter sda;
+        SqlCommandBuilder scb;
+        DataTable dt;
         public administrator()
         {
             InitializeComponent();
@@ -40,8 +43,8 @@ namespace GUI
 
         private void logoutbutton_Click(object sender, EventArgs e)
         {
-            this.Close();
-            new login().Show();
+            this.Hide();
+            new administratorMenu();
         }
 
         private void enrolledstudentsgridview_MouseClick(object sender, MouseEventArgs e)
@@ -84,9 +87,33 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new administratorMenu().Show();
+            scb = new SqlCommandBuilder(sda);
+            dataGridView1.DataSource = dt;
+            sda.Update(dt);
+        }
+
+        private void administrator_Load(object sender, EventArgs e)
+        {
+            disp_data();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        public void disp_data()
+        {
+            sda = new SqlDataAdapter(@"SELECT   courseID, StudentID, grade
+             FROM         enrollment", sqlConnection);
+            dt = new DataTable();
+            sda.Fill(dt);
+            dataGridView1.DataSource = dt;
+        }
+
+        private void errormessagelabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
-
