@@ -42,7 +42,25 @@ namespace GUI
         {
             //scb = new SqlCommandBuilder(sda);
             //sda.Update(dt);
+            DataSet dataSet = new DataSet();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter();
+            sqlConnection.Open();
+            int a,b,c;
+            for (int i = 0; i < (dataGridView1.Rows.Count); ++i)
+            {
+                //dataGridView1.Rows[i].Cells[3].Value.ToString().Trim()
+                //dataGridView1.Rows[i].Cells[5].Value
+                a = Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value.ToString().Trim());
+                b = Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value.ToString().Trim());
+                c = Convert.ToInt32(dataGridView1.Rows[i].Cells[4].Value.ToString().Trim());
+
+
+
+            }
+               
+
         }
+                
 
         private void button4_Click(object sender, EventArgs e)
         {
