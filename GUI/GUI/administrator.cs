@@ -14,9 +14,7 @@ namespace GUI
     public partial class administrator : Form
     {
         SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wolf1\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
-        SqlDataAdapter sda;
-        SqlCommandBuilder scb;
-        DataTable dt;
+
         public administrator()
         {
             InitializeComponent();
@@ -87,13 +85,11 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            scb = new SqlCommandBuilder(sda);
-            sda.Update(dt);
+
         }
 
         private void administrator_Load(object sender, EventArgs e)
         {
-            disp_data();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

@@ -92,3 +92,4 @@ C:\Users\dell\Source\Repos\VS-TP\GUI\GUI\obj\Debug\GUI.csproj.GenerateResource.c
 C:\Users\dell\Source\Repos\VS-TP\GUI\GUI\obj\Debug\GUI.exe
 C:\Users\dell\Source\Repos\VS-TP\GUI\GUI\obj\Debug\GUI.pdb
 C:\Users\wolf1\Source\Repos\VS-TP\GUI\GUI\obj\Debug\GUI.StudentAdminView.resources
+C:\Users\wolf1\Source\Repos\VS-TP\GUI\GUI\obj\Debug\GUI.SheduleChange.resources
