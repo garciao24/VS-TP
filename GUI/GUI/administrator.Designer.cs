@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.enrolledstudentsgroupbox = new System.Windows.Forms.GroupBox();
             this.enrolledstudentsgridview = new System.Windows.Forms.DataGridView();
             this.studentid = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,9 +41,6 @@
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enrolledcoursesgroupbox = new System.Windows.Forms.GroupBox();
             this.enrolledcoursesgridview = new System.Windows.Forms.DataGridView();
-            this.logoutbutton = new System.Windows.Forms.Button();
-            this.errormessagelabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.section = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,10 +51,23 @@
             this.grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Grade2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Grade3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.logoutbutton = new System.Windows.Forms.Button();
+            this.errormessagelabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.databaseDataSet = new GUI.DatabaseDataSet();
+            this.enrollmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.enrollmentTableAdapter = new GUI.DatabaseDataSetTableAdapters.enrollmentTableAdapter();
+            this.databaseDataSet1 = new GUI.DatabaseDataSet1();
+            this.enrollmentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.enrollmentTableAdapter1 = new GUI.DatabaseDataSet1TableAdapters.enrollmentTableAdapter();
             this.enrolledstudentsgroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.enrolledstudentsgridview)).BeginInit();
             this.enrolledcoursesgroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.enrolledcoursesgridview)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enrollmentBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enrollmentBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // enrolledstudentsgroupbox
@@ -181,38 +192,6 @@
             this.enrolledcoursesgridview.TabIndex = 1;
             this.enrolledcoursesgridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.enrolledcoursesgridview_CellContentClick);
             // 
-            // logoutbutton
-            // 
-            this.logoutbutton.Location = new System.Drawing.Point(717, 465);
-            this.logoutbutton.Name = "logoutbutton";
-            this.logoutbutton.Size = new System.Drawing.Size(75, 23);
-            this.logoutbutton.TabIndex = 3;
-            this.logoutbutton.Text = "Back";
-            this.logoutbutton.UseVisualStyleBackColor = true;
-            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
-            // 
-            // errormessagelabel
-            // 
-            this.errormessagelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errormessagelabel.ForeColor = System.Drawing.Color.Red;
-            this.errormessagelabel.Location = new System.Drawing.Point(14, 9);
-            this.errormessagelabel.Name = "errormessagelabel";
-            this.errormessagelabel.Size = new System.Drawing.Size(878, 14);
-            this.errormessagelabel.TabIndex = 14;
-            this.errormessagelabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.errormessagelabel.Click += new System.EventHandler(this.errormessagelabel_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(807, 465);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // cID
             // 
             this.cID.FillWeight = 125F;
@@ -284,11 +263,71 @@
             this.Grade3.Name = "Grade3";
             this.Grade3.Width = 50;
             // 
+            // logoutbutton
+            // 
+            this.logoutbutton.Location = new System.Drawing.Point(717, 465);
+            this.logoutbutton.Name = "logoutbutton";
+            this.logoutbutton.Size = new System.Drawing.Size(75, 23);
+            this.logoutbutton.TabIndex = 3;
+            this.logoutbutton.Text = "Back";
+            this.logoutbutton.UseVisualStyleBackColor = true;
+            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
+            // 
+            // errormessagelabel
+            // 
+            this.errormessagelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errormessagelabel.ForeColor = System.Drawing.Color.Red;
+            this.errormessagelabel.Location = new System.Drawing.Point(14, 9);
+            this.errormessagelabel.Name = "errormessagelabel";
+            this.errormessagelabel.Size = new System.Drawing.Size(878, 14);
+            this.errormessagelabel.TabIndex = 14;
+            this.errormessagelabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.errormessagelabel.Click += new System.EventHandler(this.errormessagelabel_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(807, 465);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Update";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // databaseDataSet
+            // 
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // enrollmentBindingSource
+            // 
+            this.enrollmentBindingSource.DataMember = "enrollment";
+            this.enrollmentBindingSource.DataSource = this.databaseDataSet;
+            // 
+            // enrollmentTableAdapter
+            // 
+            this.enrollmentTableAdapter.ClearBeforeFill = true;
+            // 
+            // databaseDataSet1
+            // 
+            this.databaseDataSet1.DataSetName = "DatabaseDataSet1";
+            this.databaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // enrollmentBindingSource1
+            // 
+            this.enrollmentBindingSource1.DataMember = "enrollment";
+            this.enrollmentBindingSource1.DataSource = this.databaseDataSet1;
+            // 
+            // enrollmentTableAdapter1
+            // 
+            this.enrollmentTableAdapter1.ClearBeforeFill = true;
+            // 
             // administrator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 497);
+            this.ClientSize = new System.Drawing.Size(911, 497);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.errormessagelabel);
             this.Controls.Add(this.logoutbutton);
@@ -301,6 +340,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.enrolledstudentsgridview)).EndInit();
             this.enrolledcoursesgroupbox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.enrolledcoursesgridview)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enrollmentBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enrollmentBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -332,5 +375,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn grade;
         private System.Windows.Forms.DataGridViewTextBoxColumn Grade2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Grade3;
+        private DatabaseDataSet databaseDataSet;
+        private System.Windows.Forms.BindingSource enrollmentBindingSource;
+        private DatabaseDataSetTableAdapters.enrollmentTableAdapter enrollmentTableAdapter;
+        private DatabaseDataSet1 databaseDataSet1;
+        private System.Windows.Forms.BindingSource enrollmentBindingSource1;
+        private DatabaseDataSet1TableAdapters.enrollmentTableAdapter enrollmentTableAdapter1;
     }
 }

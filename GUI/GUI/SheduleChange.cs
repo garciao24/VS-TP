@@ -25,11 +25,13 @@ namespace GUI
 
         private void SheduleChange_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'databaseDataSet1.enrollment' table. You can move, or remove it, as needed.
+            this.enrollmentTableAdapter.Fill(this.databaseDataSet1.enrollment);
             disp_data();
         }
         public void disp_data()
         {
-            sda = new SqlDataAdapter(@"SELECT   courseID, StudentID, grade
+            sda = new SqlDataAdapter(@"SELECT   courseID, StudentID, grade, grade2, grade3
              FROM         enrollment", sqlConnection);
             dt = new DataTable();
             sda.Fill(dt);
@@ -37,6 +39,23 @@ namespace GUI
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            //scb = new SqlCommandBuilder(sda);
+            //sda.Update(dt);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new administrator().Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            disp_data();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

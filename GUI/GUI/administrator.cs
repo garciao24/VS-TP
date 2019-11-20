@@ -87,11 +87,16 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new SheduleChange().Show();
         }
 
         private void administrator_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'databaseDataSet1.enrollment' table. You can move, or remove it, as needed.
+            this.enrollmentTableAdapter1.Fill(this.databaseDataSet1.enrollment);
+            // TODO: This line of code loads data into the 'databaseDataSet.enrollment' table. You can move, or remove it, as needed.
+            this.enrollmentTableAdapter.Fill(this.databaseDataSet.enrollment);
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
