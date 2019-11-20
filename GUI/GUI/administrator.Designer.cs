@@ -40,6 +40,9 @@
             this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enrolledcoursesgroupbox = new System.Windows.Forms.GroupBox();
             this.enrolledcoursesgridview = new System.Windows.Forms.DataGridView();
+            this.logoutbutton = new System.Windows.Forms.Button();
+            this.errormessagelabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.cID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.section = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,9 +51,8 @@
             this.timestart = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeend = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.logoutbutton = new System.Windows.Forms.Button();
-            this.errormessagelabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Grade2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Grade3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.enrolledstudentsgroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.enrolledstudentsgridview)).BeginInit();
             this.enrolledcoursesgroupbox.SuspendLayout();
@@ -168,7 +170,9 @@
             this.professor,
             this.timestart,
             this.timeend,
-            this.grade});
+            this.grade,
+            this.Grade2,
+            this.Grade3});
             this.enrolledcoursesgridview.Location = new System.Drawing.Point(6, 19);
             this.enrolledcoursesgridview.Name = "enrolledcoursesgridview";
             this.enrolledcoursesgridview.RowHeadersWidth = 62;
@@ -176,6 +180,38 @@
             this.enrolledcoursesgridview.Size = new System.Drawing.Size(869, 186);
             this.enrolledcoursesgridview.TabIndex = 1;
             this.enrolledcoursesgridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.enrolledcoursesgridview_CellContentClick);
+            // 
+            // logoutbutton
+            // 
+            this.logoutbutton.Location = new System.Drawing.Point(717, 465);
+            this.logoutbutton.Name = "logoutbutton";
+            this.logoutbutton.Size = new System.Drawing.Size(75, 23);
+            this.logoutbutton.TabIndex = 3;
+            this.logoutbutton.Text = "Back";
+            this.logoutbutton.UseVisualStyleBackColor = true;
+            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
+            // 
+            // errormessagelabel
+            // 
+            this.errormessagelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errormessagelabel.ForeColor = System.Drawing.Color.Red;
+            this.errormessagelabel.Location = new System.Drawing.Point(14, 9);
+            this.errormessagelabel.Name = "errormessagelabel";
+            this.errormessagelabel.Size = new System.Drawing.Size(878, 14);
+            this.errormessagelabel.TabIndex = 14;
+            this.errormessagelabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.errormessagelabel.Click += new System.EventHandler(this.errormessagelabel_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(807, 465);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Update";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // cID
             // 
@@ -234,37 +270,19 @@
             this.grade.Name = "grade";
             this.grade.Width = 50;
             // 
-            // logoutbutton
+            // Grade2
             // 
-            this.logoutbutton.Location = new System.Drawing.Point(717, 465);
-            this.logoutbutton.Name = "logoutbutton";
-            this.logoutbutton.Size = new System.Drawing.Size(75, 23);
-            this.logoutbutton.TabIndex = 3;
-            this.logoutbutton.Text = "Back";
-            this.logoutbutton.UseVisualStyleBackColor = true;
-            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
+            this.Grade2.HeaderText = "Grade2";
+            this.Grade2.MinimumWidth = 8;
+            this.Grade2.Name = "Grade2";
+            this.Grade2.Width = 50;
             // 
-            // errormessagelabel
+            // Grade3
             // 
-            this.errormessagelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errormessagelabel.ForeColor = System.Drawing.Color.Red;
-            this.errormessagelabel.Location = new System.Drawing.Point(14, 9);
-            this.errormessagelabel.Name = "errormessagelabel";
-            this.errormessagelabel.Size = new System.Drawing.Size(878, 14);
-            this.errormessagelabel.TabIndex = 14;
-            this.errormessagelabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.errormessagelabel.Click += new System.EventHandler(this.errormessagelabel_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(807, 465);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Grade3.HeaderText = "Grade3";
+            this.Grade3.MinimumWidth = 8;
+            this.Grade3.Name = "Grade3";
+            this.Grade3.Width = 50;
             // 
             // administrator
             // 
@@ -302,6 +320,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn phonenumber;
         private System.Windows.Forms.DataGridViewTextBoxColumn email;
         private System.Windows.Forms.Button logoutbutton;
+        private System.Windows.Forms.Label errormessagelabel;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cID;
         private System.Windows.Forms.DataGridViewTextBoxColumn department;
         private System.Windows.Forms.DataGridViewTextBoxColumn section;
@@ -310,7 +330,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn timestart;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeend;
         private System.Windows.Forms.DataGridViewTextBoxColumn grade;
-        private System.Windows.Forms.Label errormessagelabel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Grade2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Grade3;
     }
 }

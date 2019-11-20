@@ -42,7 +42,7 @@ namespace GUI
         private void logoutbutton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new administratorMenu();
+            new administratorMenu().Show();
         }
 
         private void enrolledstudentsgridview_MouseClick(object sender, MouseEventArgs e)
@@ -50,7 +50,7 @@ namespace GUI
             enrolledcoursesgridview.Rows.Clear();
             string ID = enrolledstudentsgridview.SelectedRows[0].Cells[0].Value.ToString();
             SqlDataAdapter dataAdapter = new SqlDataAdapter();
-            dataAdapter.SelectCommand = new SqlCommand("SELECT cID, department, name, professor, grade, section, timestart, timeend FROM course FULL OUTER JOIN enrollment ON course.cID = enrollment.courseID WHERE studentID =@sID", sqlConnection);
+            dataAdapter.SelectCommand = new SqlCommand("SELECT cID, department, name, professor, grade, grade2, grade3, section, timestart, timeend FROM course FULL OUTER JOIN enrollment ON course.cID = enrollment.courseID WHERE studentID =@sID", sqlConnection);
             dataAdapter.SelectCommand.Parameters.Add("@sID", SqlDbType.Int).Value = ID;
             DataTable dataTable = new DataTable();
             dataAdapter.Fill(dataTable);
@@ -65,6 +65,8 @@ namespace GUI
                 enrolledcoursesgridview.Rows[n].Cells[5].Value = item["timestart"].ToString();
                 enrolledcoursesgridview.Rows[n].Cells[6].Value = item["timeend"].ToString();
                 enrolledcoursesgridview.Rows[n].Cells[7].Value = item["grade"].ToString();
+                enrolledcoursesgridview.Rows[n].Cells[8].Value = item["grade2"].ToString();
+                enrolledcoursesgridview.Rows[n].Cells[9].Value = item["grade3"].ToString();
             }
         }
 

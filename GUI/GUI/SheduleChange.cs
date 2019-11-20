@@ -35,5 +35,10 @@ namespace GUI
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

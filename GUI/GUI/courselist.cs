@@ -29,7 +29,7 @@ namespace GUI
             int ID = int.Parse(dataTable.Rows[0][0].ToString());
 
             SqlDataAdapter dataAdapter2 = new SqlDataAdapter();
-            dataAdapter2.SelectCommand = new SqlCommand("SELECT cID, department, name, professor, grade FROM course FULL OUTER JOIN enrollment ON course.cID = enrollment.courseID WHERE studentID =@sID", sqlConnection);
+            dataAdapter2.SelectCommand = new SqlCommand("SELECT cID, department, name, professor, grade, grade2, grade3 FROM course FULL OUTER JOIN enrollment ON course.cID = enrollment.courseID WHERE studentID =@sID", sqlConnection);
             dataAdapter2.SelectCommand.Parameters.Add("@sID", SqlDbType.Int).Value = ID;
             DataTable dataTable2 = new DataTable();
             dataAdapter2.Fill(dataTable2);
@@ -41,6 +41,8 @@ namespace GUI
                 enrolledcoursesgridview.Rows[n].Cells[2].Value = item["name"].ToString();
                 enrolledcoursesgridview.Rows[n].Cells[3].Value = item["professor"].ToString();
                 enrolledcoursesgridview.Rows[n].Cells[4].Value = item["grade"].ToString();
+                enrolledcoursesgridview.Rows[n].Cells[5].Value = item["grade2"].ToString();
+                enrolledcoursesgridview.Rows[n].Cells[6].Value = item["grade3"].ToString();
             }
             sqlConnection.Close();
             secretlabel.Text = username;
@@ -64,6 +66,11 @@ namespace GUI
         }
 
         private void Enrolledcoursesgridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void courselist_Load(object sender, EventArgs e)
         {
 
         }
