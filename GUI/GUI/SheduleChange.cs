@@ -13,6 +13,7 @@ namespace GUI
 {
     public partial class SheduleChange : Form
     {
+        
         SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\wolf1\source\repos\VS-TP\GUI\GUI\Database.mdf;Integrated Security=True");
         SqlDataAdapter sda;
         SqlCommandBuilder scb;
@@ -25,9 +26,9 @@ namespace GUI
 
         private void SheduleChange_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'databaseDataSet1.enrollment' table. You can move, or remove it, as needed.
-            this.enrollmentTableAdapter.Fill(this.databaseDataSet1.enrollment);
-            disp_data();
+            // TODO: This line of code loads data into the 'databaseDataSet2.enrollment' table. You can move, or remove it, as needed.
+            this.enrollmentTableAdapter1.Fill(this.databaseDataSet2.enrollment);
+  
         }
         public void disp_data()
         {
@@ -35,7 +36,7 @@ namespace GUI
              FROM         enrollment", sqlConnection);
             dt = new DataTable();
             sda.Fill(dt);
-            dataGridView1.DataSource = dt;
+            enrollmentDataGridView.DataSource = dt;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,20 +45,24 @@ namespace GUI
             //sda.Update(dt);
             DataSet dataSet = new DataSet();
             SqlDataAdapter dataAdapter = new SqlDataAdapter();
+
             sqlConnection.Open();
-            int a,b,c;
-            for (int i = 0; i < (dataGridView1.Rows.Count); ++i)
+
+
+            for (int i = 0; i < (enrollmentDataGridView.Rows.Count); ++i)
             {
-                //dataGridView1.Rows[i].Cells[3].Value.ToString().Trim()
-                //dataGridView1.Rows[i].Cells[5].Value
-                a = Convert.ToInt32(dataGridView1.Rows[i].Cells[2].Value.ToString().Trim());
-                b = Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value.ToString().Trim());
-                c = Convert.ToInt32(dataGridView1.Rows[i].Cells[4].Value.ToString().Trim());
-
-
-
             }
-               
+            dataAdapter.SelectCommand = new SqlCommand("UPDATE enrollment SET grade =@grade, grade2 =@grade2, grade3 =@grade3 WHERE courseID =@courseID AND studentID =@studentID", sqlConnection);
+
+            dataAdapter.SelectCommand.Parameters.Add("@courseID", SqlDbType.NVarChar).Value = courseIDTextBox.Text;
+            dataAdapter.SelectCommand.Parameters.Add("@studentID", SqlDbType.NVarChar).Value = studentIDTextBox.Text;
+            dataAdapter.SelectCommand.Parameters.Add("@grade", SqlDbType.NVarChar).Value = gradeTextBox.Text;
+            dataAdapter.SelectCommand.Parameters.Add("@grade2", SqlDbType.NVarChar).Value = grade2TextBox.Text;
+            dataAdapter.SelectCommand.Parameters.Add("@grade3", SqlDbType.NVarChar).Value = grade3TextBox.Text;
+            dataAdapter.SelectCommand.ExecuteNonQuery();
+
+            this.enrollmentTableAdapter1.Fill(this.databaseDataSet2.enrollment);
+            sqlConnection.Close();
 
         }
                 
@@ -77,5 +82,7 @@ namespace GUI
         {
 
         }
+
+
     }
 }

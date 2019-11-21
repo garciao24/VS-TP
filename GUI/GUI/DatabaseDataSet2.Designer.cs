@@ -20,9 +20,9 @@ namespace GUI {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("DatabaseDataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DatabaseDataSet2")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class DatabaseDataSet : global::System.Data.DataSet {
+    public partial class DatabaseDataSet2 : global::System.Data.DataSet {
         
         private courseDataTable tablecourse;
         
@@ -38,7 +38,7 @@ namespace GUI {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public DatabaseDataSet() {
+        public DatabaseDataSet2() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -49,7 +49,7 @@ namespace GUI {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected DatabaseDataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DatabaseDataSet2(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -161,7 +161,7 @@ namespace GUI {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            DatabaseDataSet cln = ((DatabaseDataSet)(base.Clone()));
+            DatabaseDataSet2 cln = ((DatabaseDataSet2)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -253,9 +253,9 @@ namespace GUI {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "DatabaseDataSet";
+            this.DataSetName = "DatabaseDataSet2";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/DatabaseDataSet.xsd";
+            this.Namespace = "http://tempuri.org/DatabaseDataSet2.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablecourse = new courseDataTable();
@@ -303,7 +303,7 @@ namespace GUI {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            DatabaseDataSet ds = new DatabaseDataSet();
+            DatabaseDataSet2 ds = new DatabaseDataSet2();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -662,7 +662,7 @@ namespace GUI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DatabaseDataSet ds = new DatabaseDataSet();
+                DatabaseDataSet2 ds = new DatabaseDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -734,6 +734,10 @@ namespace GUI {
             
             private global::System.Data.DataColumn columngrade;
             
+            private global::System.Data.DataColumn columngrade2;
+            
+            private global::System.Data.DataColumn columngrade3;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public enrollmentDataTable() {
@@ -793,6 +797,22 @@ namespace GUI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn grade2Column {
+                get {
+                    return this.columngrade2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn grade3Column {
+                get {
+                    return this.columngrade3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -828,12 +848,14 @@ namespace GUI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public enrollmentRow AddenrollmentRow(courseRow parentcourseRowByFK_enrollment_course, studentRow parentstudentRowByFK_enrollment_student, string grade) {
+            public enrollmentRow AddenrollmentRow(courseRow parentcourseRowByFK_enrollment_course, studentRow parentstudentRowByFK_enrollment_student, int grade, int grade2, int grade3) {
                 enrollmentRow rowenrollmentRow = ((enrollmentRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
-                        grade};
+                        grade,
+                        grade2,
+                        grade3};
                 if ((parentcourseRowByFK_enrollment_course != null)) {
                     columnValuesArray[0] = parentcourseRowByFK_enrollment_course[0];
                 }
@@ -865,6 +887,8 @@ namespace GUI {
                 this.columncourseID = base.Columns["courseID"];
                 this.columnstudentID = base.Columns["studentID"];
                 this.columngrade = base.Columns["grade"];
+                this.columngrade2 = base.Columns["grade2"];
+                this.columngrade3 = base.Columns["grade3"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -874,11 +898,14 @@ namespace GUI {
                 base.Columns.Add(this.columncourseID);
                 this.columnstudentID = new global::System.Data.DataColumn("studentID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnstudentID);
-                this.columngrade = new global::System.Data.DataColumn("grade", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columngrade = new global::System.Data.DataColumn("grade", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columngrade);
+                this.columngrade2 = new global::System.Data.DataColumn("grade2", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columngrade2);
+                this.columngrade3 = new global::System.Data.DataColumn("grade3", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columngrade3);
                 this.columncourseID.AllowDBNull = false;
                 this.columnstudentID.AllowDBNull = false;
-                this.columngrade.MaxLength = 10;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -946,7 +973,7 @@ namespace GUI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DatabaseDataSet ds = new DatabaseDataSet();
+                DatabaseDataSet2 ds = new DatabaseDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1328,7 +1355,7 @@ namespace GUI {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                DatabaseDataSet ds = new DatabaseDataSet();
+                DatabaseDataSet2 ds = new DatabaseDataSet2();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -1607,10 +1634,10 @@ namespace GUI {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string grade {
+            public int grade {
                 get {
                     try {
-                        return ((string)(this[this.tableenrollment.gradeColumn]));
+                        return ((int)(this[this.tableenrollment.gradeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("The value for column \'grade\' in table \'enrollment\' is DBNull.", e);
@@ -1618,6 +1645,38 @@ namespace GUI {
                 }
                 set {
                     this[this.tableenrollment.gradeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int grade2 {
+                get {
+                    try {
+                        return ((int)(this[this.tableenrollment.grade2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'grade2\' in table \'enrollment\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableenrollment.grade2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public int grade3 {
+                get {
+                    try {
+                        return ((int)(this[this.tableenrollment.grade3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'grade3\' in table \'enrollment\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableenrollment.grade3Column] = value;
                 }
             }
             
@@ -1653,6 +1712,30 @@ namespace GUI {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public void SetgradeNull() {
                 this[this.tableenrollment.gradeColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isgrade2Null() {
+                return this.IsNull(this.tableenrollment.grade2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setgrade2Null() {
+                this[this.tableenrollment.grade2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isgrade3Null() {
+                return this.IsNull(this.tableenrollment.grade3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setgrade3Null() {
+                this[this.tableenrollment.grade3Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -1952,7 +2035,7 @@ namespace GUI {
         }
     }
 }
-namespace GUI.DatabaseDataSetTableAdapters {
+namespace GUI.DatabaseDataSet2TableAdapters {
     
     
     /// <summary>
@@ -2151,7 +2234,7 @@ SELECT cID, department, name, section, timestart, timeend, professor, room FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DatabaseDataSet.courseDataTable dataTable) {
+        public virtual int Fill(DatabaseDataSet2.courseDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2164,9 +2247,9 @@ SELECT cID, department, name, section, timestart, timeend, professor, room FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DatabaseDataSet.courseDataTable GetData() {
+        public virtual DatabaseDataSet2.courseDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DatabaseDataSet.courseDataTable dataTable = new DatabaseDataSet.courseDataTable();
+            DatabaseDataSet2.courseDataTable dataTable = new DatabaseDataSet2.courseDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2174,14 +2257,14 @@ SELECT cID, department, name, section, timestart, timeend, professor, room FROM 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DatabaseDataSet.courseDataTable dataTable) {
+        public virtual int Update(DatabaseDataSet2.courseDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DatabaseDataSet dataSet) {
+        public virtual int Update(DatabaseDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "course");
         }
         
@@ -2504,15 +2587,19 @@ SELECT cID, department, name, section, timestart, timeend, professor, room FROM 
             tableMapping.ColumnMappings.Add("courseID", "courseID");
             tableMapping.ColumnMappings.Add("studentID", "studentID");
             tableMapping.ColumnMappings.Add("grade", "grade");
+            tableMapping.ColumnMappings.Add("grade2", "grade2");
+            tableMapping.ColumnMappings.Add("grade3", "grade3");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[enrollment] ([courseID], [studentID], [grade]) VALUES (@course" +
-                "ID, @studentID, @grade)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[enrollment] ([courseID], [studentID], [grade], [grade2], [grad" +
+                "e3]) VALUES (@courseID, @studentID, @grade, @grade2, @grade3)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@courseID", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "courseID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@studentID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "studentID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@grade", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "grade", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@grade", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "grade", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@grade2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "grade2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@grade3", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "grade3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2528,7 +2615,7 @@ SELECT cID, department, name, section, timestart, timeend, professor, room FROM 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT courseID, studentID, grade FROM dbo.enrollment";
+            this._commandCollection[0].CommandText = "SELECT courseID, studentID, grade, grade2, grade3 FROM dbo.enrollment";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2536,7 +2623,7 @@ SELECT cID, department, name, section, timestart, timeend, professor, room FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DatabaseDataSet.enrollmentDataTable dataTable) {
+        public virtual int Fill(DatabaseDataSet2.enrollmentDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2549,9 +2636,9 @@ SELECT cID, department, name, section, timestart, timeend, professor, room FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DatabaseDataSet.enrollmentDataTable GetData() {
+        public virtual DatabaseDataSet2.enrollmentDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DatabaseDataSet.enrollmentDataTable dataTable = new DatabaseDataSet.enrollmentDataTable();
+            DatabaseDataSet2.enrollmentDataTable dataTable = new DatabaseDataSet2.enrollmentDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2559,14 +2646,14 @@ SELECT cID, department, name, section, timestart, timeend, professor, room FROM 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DatabaseDataSet.enrollmentDataTable dataTable) {
+        public virtual int Update(DatabaseDataSet2.enrollmentDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DatabaseDataSet dataSet) {
+        public virtual int Update(DatabaseDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "enrollment");
         }
         
@@ -2589,14 +2676,26 @@ SELECT cID, department, name, section, timestart, timeend, professor, room FROM 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(double courseID, int studentID, string grade) {
+        public virtual int Insert(double courseID, int studentID, global::System.Nullable<int> grade, global::System.Nullable<int> grade2, global::System.Nullable<int> grade3) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((double)(courseID));
             this.Adapter.InsertCommand.Parameters[1].Value = ((int)(studentID));
-            if ((grade == null)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            if ((grade.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((int)(grade.Value));
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(grade));
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((grade2.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((int)(grade2.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((grade3.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(grade3.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -2814,7 +2913,7 @@ SELECT sID, username, password, firstname, lastname, DOB, phonenumber, gender, e
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(DatabaseDataSet.studentDataTable dataTable) {
+        public virtual int Fill(DatabaseDataSet2.studentDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -2827,9 +2926,9 @@ SELECT sID, username, password, firstname, lastname, DOB, phonenumber, gender, e
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual DatabaseDataSet.studentDataTable GetData() {
+        public virtual DatabaseDataSet2.studentDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            DatabaseDataSet.studentDataTable dataTable = new DatabaseDataSet.studentDataTable();
+            DatabaseDataSet2.studentDataTable dataTable = new DatabaseDataSet2.studentDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -2837,14 +2936,14 @@ SELECT sID, username, password, firstname, lastname, DOB, phonenumber, gender, e
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DatabaseDataSet.studentDataTable dataTable) {
+        public virtual int Update(DatabaseDataSet2.studentDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(DatabaseDataSet dataSet) {
+        public virtual int Update(DatabaseDataSet2 dataSet) {
             return this.Adapter.Update(dataSet, "student");
         }
         
@@ -3212,7 +3311,7 @@ SELECT sID, username, password, firstname, lastname, DOB, phonenumber, gender, e
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(DatabaseDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(DatabaseDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._courseTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.course.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -3249,7 +3348,7 @@ SELECT sID, username, password, firstname, lastname, DOB, phonenumber, gender, e
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(DatabaseDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(DatabaseDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._courseTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.course.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -3283,7 +3382,7 @@ SELECT sID, username, password, firstname, lastname, DOB, phonenumber, gender, e
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(DatabaseDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(DatabaseDataSet2 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._enrollmentTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.enrollment.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -3341,7 +3440,7 @@ SELECT sID, username, password, firstname, lastname, DOB, phonenumber, gender, e
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(DatabaseDataSet dataSet) {
+        public virtual int UpdateAll(DatabaseDataSet2 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
