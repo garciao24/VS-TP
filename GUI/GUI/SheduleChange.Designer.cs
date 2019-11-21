@@ -44,16 +44,16 @@
             this.enrollmentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tableAdapterManager = new GUI.DatabaseDataSet1TableAdapters.TableAdapterManager();
             this.enrollmentDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.courseIDTextBox = new System.Windows.Forms.TextBox();
             this.studentIDTextBox = new System.Windows.Forms.TextBox();
             this.gradeTextBox = new System.Windows.Forms.TextBox();
             this.grade2TextBox = new System.Windows.Forms.TextBox();
             this.grade3TextBox = new System.Windows.Forms.TextBox();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             courseIDLabel = new System.Windows.Forms.Label();
             studentIDLabel = new System.Windows.Forms.Label();
             gradeLabel = new System.Windows.Forms.Label();
@@ -65,6 +65,51 @@
             ((System.ComponentModel.ISupportInitialize)(this.enrollmentBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enrollmentDataGridView)).BeginInit();
             this.SuspendLayout();
+            // 
+            // courseIDLabel
+            // 
+            courseIDLabel.AutoSize = true;
+            courseIDLabel.Location = new System.Drawing.Point(579, 72);
+            courseIDLabel.Name = "courseIDLabel";
+            courseIDLabel.Size = new System.Drawing.Size(56, 13);
+            courseIDLabel.TabIndex = 4;
+            courseIDLabel.Text = "course ID:";
+            // 
+            // studentIDLabel
+            // 
+            studentIDLabel.AutoSize = true;
+            studentIDLabel.Location = new System.Drawing.Point(579, 98);
+            studentIDLabel.Name = "studentIDLabel";
+            studentIDLabel.Size = new System.Drawing.Size(59, 13);
+            studentIDLabel.TabIndex = 6;
+            studentIDLabel.Text = "student ID:";
+            // 
+            // gradeLabel
+            // 
+            gradeLabel.AutoSize = true;
+            gradeLabel.Location = new System.Drawing.Point(579, 124);
+            gradeLabel.Name = "gradeLabel";
+            gradeLabel.Size = new System.Drawing.Size(37, 13);
+            gradeLabel.TabIndex = 8;
+            gradeLabel.Text = "grade:";
+            // 
+            // grade2Label
+            // 
+            grade2Label.AutoSize = true;
+            grade2Label.Location = new System.Drawing.Point(579, 150);
+            grade2Label.Name = "grade2Label";
+            grade2Label.Size = new System.Drawing.Size(43, 13);
+            grade2Label.TabIndex = 10;
+            grade2Label.Text = "grade2:";
+            // 
+            // grade3Label
+            // 
+            grade3Label.AutoSize = true;
+            grade3Label.Location = new System.Drawing.Point(579, 176);
+            grade3Label.Name = "grade3Label";
+            grade3Label.Size = new System.Drawing.Size(43, 13);
+            grade3Label.TabIndex = 12;
+            grade3Label.Text = "grade3:";
             // 
             // enrollmentBindingSource
             // 
@@ -83,7 +128,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(513, 404);
+            this.button1.Location = new System.Drawing.Point(682, 240);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;
@@ -93,7 +138,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(432, 404);
+            this.button3.Location = new System.Drawing.Point(601, 240);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 3;
@@ -107,7 +152,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(351, 404);
+            this.button4.Location = new System.Drawing.Point(520, 240);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 4;
@@ -139,49 +184,10 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.enrollmentDataGridView.DataSource = this.enrollmentBindingSource1;
-            this.enrollmentDataGridView.Location = new System.Drawing.Point(80, 40);
+            this.enrollmentDataGridView.Location = new System.Drawing.Point(12, 12);
             this.enrollmentDataGridView.Name = "enrollmentDataGridView";
-            this.enrollmentDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.enrollmentDataGridView.Size = new System.Drawing.Size(545, 220);
             this.enrollmentDataGridView.TabIndex = 4;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "courseID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "courseID";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "studentID";
-            this.dataGridViewTextBoxColumn2.HeaderText = "studentID";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "grade";
-            this.dataGridViewTextBoxColumn3.HeaderText = "grade";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "grade2";
-            this.dataGridViewTextBoxColumn4.HeaderText = "grade2";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "grade3";
-            this.dataGridViewTextBoxColumn5.HeaderText = "grade3";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // courseIDLabel
-            // 
-            courseIDLabel.AutoSize = true;
-            courseIDLabel.Location = new System.Drawing.Point(579, 72);
-            courseIDLabel.Name = "courseIDLabel";
-            courseIDLabel.Size = new System.Drawing.Size(56, 13);
-            courseIDLabel.TabIndex = 4;
-            courseIDLabel.Text = "course ID:";
             // 
             // courseIDTextBox
             // 
@@ -192,15 +198,6 @@
             this.courseIDTextBox.Size = new System.Drawing.Size(100, 20);
             this.courseIDTextBox.TabIndex = 5;
             // 
-            // studentIDLabel
-            // 
-            studentIDLabel.AutoSize = true;
-            studentIDLabel.Location = new System.Drawing.Point(579, 98);
-            studentIDLabel.Name = "studentIDLabel";
-            studentIDLabel.Size = new System.Drawing.Size(59, 13);
-            studentIDLabel.TabIndex = 6;
-            studentIDLabel.Text = "student ID:";
-            // 
             // studentIDTextBox
             // 
             this.studentIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.enrollmentBindingSource1, "studentID", true));
@@ -210,15 +207,6 @@
             this.studentIDTextBox.Size = new System.Drawing.Size(100, 20);
             this.studentIDTextBox.TabIndex = 7;
             // 
-            // gradeLabel
-            // 
-            gradeLabel.AutoSize = true;
-            gradeLabel.Location = new System.Drawing.Point(579, 124);
-            gradeLabel.Name = "gradeLabel";
-            gradeLabel.Size = new System.Drawing.Size(37, 13);
-            gradeLabel.TabIndex = 8;
-            gradeLabel.Text = "grade:";
-            // 
             // gradeTextBox
             // 
             this.gradeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.enrollmentBindingSource1, "grade", true));
@@ -226,15 +214,6 @@
             this.gradeTextBox.Name = "gradeTextBox";
             this.gradeTextBox.Size = new System.Drawing.Size(100, 20);
             this.gradeTextBox.TabIndex = 9;
-            // 
-            // grade2Label
-            // 
-            grade2Label.AutoSize = true;
-            grade2Label.Location = new System.Drawing.Point(579, 150);
-            grade2Label.Name = "grade2Label";
-            grade2Label.Size = new System.Drawing.Size(43, 13);
-            grade2Label.TabIndex = 10;
-            grade2Label.Text = "grade2:";
             // 
             // grade2TextBox
             // 
@@ -244,15 +223,6 @@
             this.grade2TextBox.Size = new System.Drawing.Size(100, 20);
             this.grade2TextBox.TabIndex = 11;
             // 
-            // grade3Label
-            // 
-            grade3Label.AutoSize = true;
-            grade3Label.Location = new System.Drawing.Point(579, 176);
-            grade3Label.Name = "grade3Label";
-            grade3Label.Size = new System.Drawing.Size(43, 13);
-            grade3Label.TabIndex = 12;
-            grade3Label.Text = "grade3:";
-            // 
             // grade3TextBox
             // 
             this.grade3TextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.enrollmentBindingSource1, "grade3", true));
@@ -261,11 +231,46 @@
             this.grade3TextBox.Size = new System.Drawing.Size(100, 20);
             this.grade3TextBox.TabIndex = 13;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "courseID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "courseID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "studentID";
+            this.dataGridViewTextBoxColumn2.HeaderText = "studentID";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "grade";
+            this.dataGridViewTextBoxColumn3.HeaderText = "grade";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "grade2";
+            this.dataGridViewTextBoxColumn4.HeaderText = "grade2";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "grade3";
+            this.dataGridViewTextBoxColumn5.HeaderText = "grade3";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // SheduleChange
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(862, 450);
+            this.ClientSize = new System.Drawing.Size(785, 285);
             this.Controls.Add(courseIDLabel);
             this.Controls.Add(this.courseIDTextBox);
             this.Controls.Add(studentIDLabel);
@@ -304,15 +309,15 @@
         private System.Windows.Forms.BindingSource enrollmentBindingSource1;
         private DatabaseDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.DataGridView enrollmentDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.TextBox courseIDTextBox;
         private System.Windows.Forms.TextBox studentIDTextBox;
         private System.Windows.Forms.TextBox gradeTextBox;
         private System.Windows.Forms.TextBox grade2TextBox;
         private System.Windows.Forms.TextBox grade3TextBox;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }
