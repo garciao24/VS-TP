@@ -55,12 +55,22 @@ namespace GUI
             dataAdapter.SelectCommand.Parameters.Add("@grade3", SqlDbType.NVarChar).Value = grade3TextBox.Text;
             dataAdapter.SelectCommand.ExecuteNonQuery();
 
-            this.enrollmentTableAdapter.Fill(this.databaseDataSet1.enrollment);
+            disp_data();
             sqlConnection.Close();
 
 
         }
-                
+
+
+        public void disp_data()
+        {
+            sda = new SqlDataAdapter(@"SELECT   courseID, StudentID, grade, grade2, grade3
+             FROM         enrollment", sqlConnection);
+            dt = new DataTable();
+            sda.Fill(dt);
+            enrollmentDataGridView.DataSource = dt;
+        }
+
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -70,7 +80,7 @@ namespace GUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            disp_data();
         }
 
         private void button2_Click(object sender, EventArgs e)
