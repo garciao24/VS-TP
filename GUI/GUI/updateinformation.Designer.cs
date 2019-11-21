@@ -185,6 +185,7 @@
             this.updateinformationgroupbox.Controls.Add(this.firstnametextbox);
             this.updateinformationgroupbox.Controls.Add(this.lastnametextbox);
             this.updateinformationgroupbox.Controls.Add(this.firstnamelabel);
+            this.updateinformationgroupbox.ForeColor = System.Drawing.Color.White;
             this.updateinformationgroupbox.Location = new System.Drawing.Point(12, 139);
             this.updateinformationgroupbox.Name = "updateinformationgroupbox";
             this.updateinformationgroupbox.Size = new System.Drawing.Size(725, 143);
@@ -276,42 +277,55 @@
             // 
             // exitbutton
             // 
+            this.exitbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.exitbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitbutton.ForeColor = System.Drawing.Color.Black;
             this.exitbutton.Location = new System.Drawing.Point(627, 106);
             this.exitbutton.Name = "exitbutton";
             this.exitbutton.Size = new System.Drawing.Size(75, 23);
             this.exitbutton.TabIndex = 16;
             this.exitbutton.Text = "Logout";
-            this.exitbutton.UseVisualStyleBackColor = true;
+            this.exitbutton.UseVisualStyleBackColor = false;
             this.exitbutton.Click += new System.EventHandler(this.exitbutton_Click);
             // 
             // backbutton
             // 
+            this.backbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.backbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backbutton.ForeColor = System.Drawing.Color.Black;
             this.backbutton.Location = new System.Drawing.Point(627, 77);
             this.backbutton.Name = "backbutton";
             this.backbutton.Size = new System.Drawing.Size(75, 23);
             this.backbutton.TabIndex = 15;
             this.backbutton.Text = "Back";
-            this.backbutton.UseVisualStyleBackColor = true;
+            this.backbutton.UseVisualStyleBackColor = false;
             this.backbutton.Click += new System.EventHandler(this.backbutton_Click);
             // 
             // updatebutton
             // 
+            this.updatebutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.updatebutton.Cursor = System.Windows.Forms.Cursors.Default;
+            this.updatebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updatebutton.ForeColor = System.Drawing.Color.Black;
             this.updatebutton.Location = new System.Drawing.Point(627, 19);
             this.updatebutton.Name = "updatebutton";
             this.updatebutton.Size = new System.Drawing.Size(75, 23);
             this.updatebutton.TabIndex = 14;
             this.updatebutton.Text = "Update";
-            this.updatebutton.UseVisualStyleBackColor = true;
+            this.updatebutton.UseVisualStyleBackColor = false;
             this.updatebutton.Click += new System.EventHandler(this.updatebutton_Click);
             // 
             // clearbutton
             // 
+            this.clearbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.clearbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearbutton.ForeColor = System.Drawing.Color.Black;
             this.clearbutton.Location = new System.Drawing.Point(627, 48);
             this.clearbutton.Name = "clearbutton";
             this.clearbutton.Size = new System.Drawing.Size(75, 23);
             this.clearbutton.TabIndex = 13;
             this.clearbutton.Text = "Clear";
-            this.clearbutton.UseVisualStyleBackColor = true;
+            this.clearbutton.UseVisualStyleBackColor = false;
             this.clearbutton.Click += new System.EventHandler(this.clearbutton_Click);
             // 
             // phonenumbertextbox
@@ -344,6 +358,7 @@
             // currentinformationgroupbox
             // 
             this.currentinformationgroupbox.Controls.Add(this.currentinformationdatagrid);
+            this.currentinformationgroupbox.ForeColor = System.Drawing.Color.White;
             this.currentinformationgroupbox.Location = new System.Drawing.Point(12, 29);
             this.currentinformationgroupbox.Name = "currentinformationgroupbox";
             this.currentinformationgroupbox.Size = new System.Drawing.Size(725, 104);
@@ -365,6 +380,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(749, 294);
             this.Controls.Add(this.errormessagelabel);
             this.Controls.Add(this.currentinformationgroupbox);
