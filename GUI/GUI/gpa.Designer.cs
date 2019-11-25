@@ -28,21 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.secretlabel = new System.Windows.Forms.Label();
             this.currentgradesgroupbox = new System.Windows.Forms.GroupBox();
             this.viewgradegridview = new System.Windows.Forms.DataGridView();
-            this.department = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grade2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grade3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.exitbutton = new System.Windows.Forms.Button();
             this.backbutton = new System.Windows.Forms.Button();
             this.calculatebutton = new System.Windows.Forms.Button();
             this.gpalabel = new System.Windows.Forms.Label();
             this.calculategpagroupbox = new System.Windows.Forms.GroupBox();
             this.gpalabel2 = new System.Windows.Forms.Label();
+            this.department = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grade2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grade3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.currentgradesgroupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewgradegridview)).BeginInit();
             this.calculategpagroupbox.SuspendLayout();
@@ -81,6 +87,7 @@
             this.grade,
             this.grade2,
             this.grade3});
+            this.viewgradegridview.GridColor = System.Drawing.Color.White;
             this.viewgradegridview.Location = new System.Drawing.Point(21, 19);
             this.viewgradegridview.Name = "viewgradegridview";
             this.viewgradegridview.ReadOnly = true;
@@ -88,54 +95,6 @@
             this.viewgradegridview.Size = new System.Drawing.Size(456, 121);
             this.viewgradegridview.TabIndex = 0;
             this.viewgradegridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewgradegridview_CellContentClick);
-            // 
-            // department
-            // 
-            this.department.HeaderText = "Department";
-            this.department.MinimumWidth = 8;
-            this.department.Name = "department";
-            this.department.ReadOnly = true;
-            this.department.Width = 75;
-            // 
-            // id
-            // 
-            this.id.HeaderText = "Course Number";
-            this.id.MinimumWidth = 8;
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 50;
-            // 
-            // name
-            // 
-            this.name.HeaderText = "Name";
-            this.name.MinimumWidth = 8;
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            this.name.Width = 200;
-            // 
-            // grade
-            // 
-            this.grade.HeaderText = "Grade";
-            this.grade.MinimumWidth = 8;
-            this.grade.Name = "grade";
-            this.grade.ReadOnly = true;
-            this.grade.Width = 50;
-            // 
-            // grade2
-            // 
-            this.grade2.HeaderText = "Grade2";
-            this.grade2.MinimumWidth = 8;
-            this.grade2.Name = "grade2";
-            this.grade2.ReadOnly = true;
-            this.grade2.Width = 50;
-            // 
-            // grade3
-            // 
-            this.grade3.HeaderText = "Grade3";
-            this.grade3.MinimumWidth = 8;
-            this.grade3.Name = "grade3";
-            this.grade3.ReadOnly = true;
-            this.grade3.Width = 50;
             // 
             // exitbutton
             // 
@@ -205,6 +164,66 @@
             this.gpalabel2.Name = "gpalabel2";
             this.gpalabel2.Size = new System.Drawing.Size(89, 23);
             this.gpalabel2.TabIndex = 6;
+            // 
+            // department
+            // 
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            this.department.DefaultCellStyle = dataGridViewCellStyle7;
+            this.department.HeaderText = "Department";
+            this.department.MinimumWidth = 8;
+            this.department.Name = "department";
+            this.department.ReadOnly = true;
+            this.department.Width = 75;
+            // 
+            // id
+            // 
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            this.id.DefaultCellStyle = dataGridViewCellStyle8;
+            this.id.HeaderText = "Course Number";
+            this.id.MinimumWidth = 8;
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 50;
+            // 
+            // name
+            // 
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            this.name.DefaultCellStyle = dataGridViewCellStyle9;
+            this.name.HeaderText = "Name";
+            this.name.MinimumWidth = 8;
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Width = 200;
+            // 
+            // grade
+            // 
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            this.grade.DefaultCellStyle = dataGridViewCellStyle10;
+            this.grade.HeaderText = "Grade";
+            this.grade.MinimumWidth = 8;
+            this.grade.Name = "grade";
+            this.grade.ReadOnly = true;
+            this.grade.Width = 50;
+            // 
+            // grade2
+            // 
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            this.grade2.DefaultCellStyle = dataGridViewCellStyle11;
+            this.grade2.HeaderText = "Grade2";
+            this.grade2.MinimumWidth = 8;
+            this.grade2.Name = "grade2";
+            this.grade2.ReadOnly = true;
+            this.grade2.Width = 50;
+            // 
+            // grade3
+            // 
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            this.grade3.DefaultCellStyle = dataGridViewCellStyle12;
+            this.grade3.HeaderText = "Grade3";
+            this.grade3.MinimumWidth = 8;
+            this.grade3.Name = "grade3";
+            this.grade3.ReadOnly = true;
+            this.grade3.Width = 50;
             // 
             // gpa
             // 
