@@ -265,12 +265,14 @@
             // 
             // logoutbutton
             // 
+            this.logoutbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.logoutbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutbutton.Location = new System.Drawing.Point(717, 465);
             this.logoutbutton.Name = "logoutbutton";
             this.logoutbutton.Size = new System.Drawing.Size(75, 23);
             this.logoutbutton.TabIndex = 3;
             this.logoutbutton.Text = "Back";
-            this.logoutbutton.UseVisualStyleBackColor = true;
+            this.logoutbutton.UseVisualStyleBackColor = false;
             this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
             // 
             // errormessagelabel
@@ -286,13 +288,15 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(807, 465);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 15;
             this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // databaseDataSet
@@ -327,6 +331,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(911, 497);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.errormessagelabel);

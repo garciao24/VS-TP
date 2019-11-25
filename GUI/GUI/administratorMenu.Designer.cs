@@ -41,81 +41,87 @@
             // 
             this.secretlabel.AutoSize = true;
             this.secretlabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.secretlabel.Location = new System.Drawing.Point(12, 114);
-            this.secretlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.secretlabel.Location = new System.Drawing.Point(8, 74);
             this.secretlabel.Name = "secretlabel";
-            this.secretlabel.Size = new System.Drawing.Size(0, 20);
+            this.secretlabel.Size = new System.Drawing.Size(0, 13);
             this.secretlabel.TabIndex = 19;
             this.secretlabel.Visible = false;
             // 
             // logoutbutton
             // 
-            this.logoutbutton.Location = new System.Drawing.Point(334, 106);
-            this.logoutbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.logoutbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.logoutbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutbutton.Location = new System.Drawing.Point(223, 69);
             this.logoutbutton.Name = "logoutbutton";
-            this.logoutbutton.Size = new System.Drawing.Size(112, 35);
+            this.logoutbutton.Size = new System.Drawing.Size(75, 23);
             this.logoutbutton.TabIndex = 18;
             this.logoutbutton.Text = "Logout";
-            this.logoutbutton.UseVisualStyleBackColor = true;
+            this.logoutbutton.UseVisualStyleBackColor = false;
             this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
             // 
             // gpabutton
             // 
-            this.gpabutton.Location = new System.Drawing.Point(280, 62);
-            this.gpabutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gpabutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.gpabutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gpabutton.Location = new System.Drawing.Point(187, 40);
             this.gpabutton.Name = "gpabutton";
-            this.gpabutton.Size = new System.Drawing.Size(166, 35);
+            this.gpabutton.Size = new System.Drawing.Size(111, 23);
             this.gpabutton.TabIndex = 17;
             this.gpabutton.Text = "Edit Current student";
-            this.gpabutton.UseVisualStyleBackColor = true;
+            this.gpabutton.UseVisualStyleBackColor = false;
             this.gpabutton.Click += new System.EventHandler(this.gpabutton_Click);
             // 
             // enrolledclassesbutton
             // 
-            this.enrolledclassesbutton.Location = new System.Drawing.Point(124, 62);
-            this.enrolledclassesbutton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.enrolledclassesbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.enrolledclassesbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.enrolledclassesbutton.Location = new System.Drawing.Point(83, 40);
             this.enrolledclassesbutton.Name = "enrolledclassesbutton";
-            this.enrolledclassesbutton.Size = new System.Drawing.Size(147, 35);
+            this.enrolledclassesbutton.Size = new System.Drawing.Size(98, 23);
             this.enrolledclassesbutton.TabIndex = 16;
             this.enrolledclassesbutton.Text = "Add New Course";
-            this.enrolledclassesbutton.UseVisualStyleBackColor = true;
+            this.enrolledclassesbutton.UseVisualStyleBackColor = false;
             this.enrolledclassesbutton.Click += new System.EventHandler(this.enrolledclassesbutton_Click);
             // 
             // ViewInfo
             // 
-            this.ViewInfo.Location = new System.Drawing.Point(12, 62);
-            this.ViewInfo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ViewInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.ViewInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ViewInfo.Location = new System.Drawing.Point(8, 40);
             this.ViewInfo.Name = "ViewInfo";
-            this.ViewInfo.Size = new System.Drawing.Size(104, 35);
+            this.ViewInfo.Size = new System.Drawing.Size(69, 23);
             this.ViewInfo.TabIndex = 15;
             this.ViewInfo.Text = "View Info";
-            this.ViewInfo.UseVisualStyleBackColor = true;
+            this.ViewInfo.UseVisualStyleBackColor = false;
             this.ViewInfo.Click += new System.EventHandler(this.updatebutton_Click);
             // 
             // welcomelabel
             // 
             this.welcomelabel.AutoSize = true;
-            this.welcomelabel.Location = new System.Drawing.Point(12, 23);
-            this.welcomelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.welcomelabel.ForeColor = System.Drawing.Color.White;
+            this.welcomelabel.Location = new System.Drawing.Point(8, 15);
             this.welcomelabel.Name = "welcomelabel";
-            this.welcomelabel.Size = new System.Drawing.Size(75, 20);
+            this.welcomelabel.Size = new System.Drawing.Size(52, 13);
             this.welcomelabel.TabIndex = 13;
             this.welcomelabel.Text = "Welcome";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(94, 23);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(63, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 20);
+            this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 20;
             this.label1.Text = "Admin";
             // 
             // administratorMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 157);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
+            this.ClientSize = new System.Drawing.Size(315, 102);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.secretlabel);
             this.Controls.Add(this.logoutbutton);
@@ -124,7 +130,6 @@
             this.Controls.Add(this.ViewInfo);
             this.Controls.Add(this.welcomelabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "administratorMenu";
             this.Text = "administratorMenu";
             this.Load += new System.EventHandler(this.administratorMenu_Load);

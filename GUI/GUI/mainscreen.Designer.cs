@@ -60,6 +60,7 @@
             // updatebutton
             // 
             this.updatebutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.updatebutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.updatebutton.Location = new System.Drawing.Point(12, 34);
             this.updatebutton.Name = "updatebutton";
             this.updatebutton.Size = new System.Drawing.Size(116, 23);
@@ -71,6 +72,7 @@
             // enrolledclassesbutton
             // 
             this.enrolledclassesbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.enrolledclassesbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.enrolledclassesbutton.Location = new System.Drawing.Point(134, 34);
             this.enrolledclassesbutton.Name = "enrolledclassesbutton";
             this.enrolledclassesbutton.Size = new System.Drawing.Size(75, 23);
@@ -82,6 +84,7 @@
             // gpabutton
             // 
             this.gpabutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.gpabutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.gpabutton.Location = new System.Drawing.Point(214, 34);
             this.gpabutton.Name = "gpabutton";
             this.gpabutton.Size = new System.Drawing.Size(75, 23);
@@ -93,6 +96,7 @@
             // logoutbutton
             // 
             this.logoutbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.logoutbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logoutbutton.Location = new System.Drawing.Point(227, 63);
             this.logoutbutton.Name = "logoutbutton";
             this.logoutbutton.Size = new System.Drawing.Size(75, 23);

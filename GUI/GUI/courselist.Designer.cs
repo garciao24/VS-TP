@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.enrolledcoursesgridview = new System.Windows.Forms.DataGridView();
-            this.enrolledcoursesgroupbox = new System.Windows.Forms.GroupBox();
-            this.backbutton = new System.Windows.Forms.Button();
-            this.logoutbutton = new System.Windows.Forms.Button();
-            this.secretlabel = new System.Windows.Forms.Label();
             this.department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,6 +36,10 @@
             this.grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Grade2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Grade3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enrolledcoursesgroupbox = new System.Windows.Forms.GroupBox();
+            this.backbutton = new System.Windows.Forms.Button();
+            this.logoutbutton = new System.Windows.Forms.Button();
+            this.secretlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.enrolledcoursesgridview)).BeginInit();
             this.enrolledcoursesgroupbox.SuspendLayout();
             this.SuspendLayout();
@@ -62,46 +62,6 @@
             this.enrolledcoursesgridview.Size = new System.Drawing.Size(568, 139);
             this.enrolledcoursesgridview.TabIndex = 0;
             this.enrolledcoursesgridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Enrolledcoursesgridview_CellContentClick);
-            // 
-            // enrolledcoursesgroupbox
-            // 
-            this.enrolledcoursesgroupbox.Controls.Add(this.enrolledcoursesgridview);
-            this.enrolledcoursesgroupbox.Location = new System.Drawing.Point(12, 12);
-            this.enrolledcoursesgroupbox.Name = "enrolledcoursesgroupbox";
-            this.enrolledcoursesgroupbox.Size = new System.Drawing.Size(595, 170);
-            this.enrolledcoursesgroupbox.TabIndex = 1;
-            this.enrolledcoursesgroupbox.TabStop = false;
-            this.enrolledcoursesgroupbox.Text = "Enrolled Courses";
-            // 
-            // backbutton
-            // 
-            this.backbutton.Location = new System.Drawing.Point(451, 188);
-            this.backbutton.Name = "backbutton";
-            this.backbutton.Size = new System.Drawing.Size(75, 23);
-            this.backbutton.TabIndex = 2;
-            this.backbutton.Text = "Back";
-            this.backbutton.UseVisualStyleBackColor = true;
-            this.backbutton.Click += new System.EventHandler(this.backbutton_Click);
-            // 
-            // logoutbutton
-            // 
-            this.logoutbutton.Location = new System.Drawing.Point(532, 188);
-            this.logoutbutton.Name = "logoutbutton";
-            this.logoutbutton.Size = new System.Drawing.Size(75, 23);
-            this.logoutbutton.TabIndex = 3;
-            this.logoutbutton.Text = "Logout";
-            this.logoutbutton.UseVisualStyleBackColor = true;
-            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
-            // 
-            // secretlabel
-            // 
-            this.secretlabel.AutoSize = true;
-            this.secretlabel.ForeColor = System.Drawing.SystemColors.Control;
-            this.secretlabel.Location = new System.Drawing.Point(9, 201);
-            this.secretlabel.Name = "secretlabel";
-            this.secretlabel.Size = new System.Drawing.Size(0, 13);
-            this.secretlabel.TabIndex = 4;
-            this.secretlabel.Visible = false;
             // 
             // department
             // 
@@ -153,10 +113,55 @@
             this.Grade3.Name = "Grade3";
             this.Grade3.Width = 50;
             // 
+            // enrolledcoursesgroupbox
+            // 
+            this.enrolledcoursesgroupbox.Controls.Add(this.enrolledcoursesgridview);
+            this.enrolledcoursesgroupbox.Location = new System.Drawing.Point(12, 12);
+            this.enrolledcoursesgroupbox.Name = "enrolledcoursesgroupbox";
+            this.enrolledcoursesgroupbox.Size = new System.Drawing.Size(595, 170);
+            this.enrolledcoursesgroupbox.TabIndex = 1;
+            this.enrolledcoursesgroupbox.TabStop = false;
+            this.enrolledcoursesgroupbox.Text = "Enrolled Courses";
+            // 
+            // backbutton
+            // 
+            this.backbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.backbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backbutton.Location = new System.Drawing.Point(451, 188);
+            this.backbutton.Name = "backbutton";
+            this.backbutton.Size = new System.Drawing.Size(75, 23);
+            this.backbutton.TabIndex = 2;
+            this.backbutton.Text = "Back";
+            this.backbutton.UseVisualStyleBackColor = false;
+            this.backbutton.Click += new System.EventHandler(this.backbutton_Click);
+            // 
+            // logoutbutton
+            // 
+            this.logoutbutton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.logoutbutton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logoutbutton.Location = new System.Drawing.Point(532, 188);
+            this.logoutbutton.Name = "logoutbutton";
+            this.logoutbutton.Size = new System.Drawing.Size(75, 23);
+            this.logoutbutton.TabIndex = 3;
+            this.logoutbutton.Text = "Logout";
+            this.logoutbutton.UseVisualStyleBackColor = false;
+            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
+            // 
+            // secretlabel
+            // 
+            this.secretlabel.AutoSize = true;
+            this.secretlabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.secretlabel.Location = new System.Drawing.Point(9, 201);
+            this.secretlabel.Name = "secretlabel";
+            this.secretlabel.Size = new System.Drawing.Size(0, 13);
+            this.secretlabel.TabIndex = 4;
+            this.secretlabel.Visible = false;
+            // 
             // courselist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(620, 223);
             this.Controls.Add(this.secretlabel);
             this.Controls.Add(this.logoutbutton);
