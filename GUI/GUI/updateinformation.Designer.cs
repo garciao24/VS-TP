@@ -247,7 +247,7 @@
             "",
             "Female",
             "Male",
-            "Other"});
+            "Non-Binary"});
             this.gendercombobox.Location = new System.Drawing.Point(368, 37);
             this.gendercombobox.Name = "gendercombobox";
             this.gendercombobox.Size = new System.Drawing.Size(100, 21);
