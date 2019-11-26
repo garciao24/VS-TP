@@ -73,6 +73,7 @@
             // enrolledstudentsgroupbox
             // 
             this.enrolledstudentsgroupbox.Controls.Add(this.enrolledstudentsgridview);
+            this.enrolledstudentsgroupbox.ForeColor = System.Drawing.Color.White;
             this.enrolledstudentsgroupbox.Location = new System.Drawing.Point(17, 26);
             this.enrolledstudentsgroupbox.Name = "enrolledstudentsgroupbox";
             this.enrolledstudentsgroupbox.Size = new System.Drawing.Size(882, 225);
@@ -162,6 +163,7 @@
             // enrolledcoursesgroupbox
             // 
             this.enrolledcoursesgroupbox.Controls.Add(this.enrolledcoursesgridview);
+            this.enrolledcoursesgroupbox.ForeColor = System.Drawing.Color.White;
             this.enrolledcoursesgroupbox.Location = new System.Drawing.Point(17, 257);
             this.enrolledcoursesgroupbox.Name = "enrolledcoursesgroupbox";
             this.enrolledcoursesgroupbox.Size = new System.Drawing.Size(882, 191);
@@ -188,7 +190,7 @@
             this.enrolledcoursesgridview.Name = "enrolledcoursesgridview";
             this.enrolledcoursesgridview.RowHeadersWidth = 62;
             this.enrolledcoursesgridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.enrolledcoursesgridview.Size = new System.Drawing.Size(869, 186);
+            this.enrolledcoursesgridview.Size = new System.Drawing.Size(869, 166);
             this.enrolledcoursesgridview.TabIndex = 1;
             this.enrolledcoursesgridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.enrolledcoursesgridview_CellContentClick);
             // 
@@ -332,7 +334,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(911, 497);
+            this.ClientSize = new System.Drawing.Size(911, 503);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.errormessagelabel);
             this.Controls.Add(this.logoutbutton);
