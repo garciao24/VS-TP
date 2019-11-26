@@ -75,7 +75,7 @@ namespace GUI
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            new administrator().Show();
+            //new administrator().Show();
         }
 
         private void button3_Click(object sender, EventArgs e)

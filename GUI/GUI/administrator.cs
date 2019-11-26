@@ -87,7 +87,7 @@ namespace GUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            ///this.Hide();
             new SheduleChange().Show();
         }
 
