@@ -59,9 +59,9 @@ namespace GUI
 
         private void calculatebutton_Click(object sender, EventArgs e)
         {
-            int grade1, grade2, grade3, t;
+            double grade1, grade2, grade3, t;
 
-            int total = 0, hours = 0;
+            double total = 0, hours = 0;
             for (int i = 0; i < (viewgradegridview.Rows.Count); ++i)
             {
                 float credithour = ((Convert.ToInt32(viewgradegridview.Rows[i].Cells[1].Value))/ 100) % 10;
@@ -96,6 +96,7 @@ namespace GUI
                     total = 0 + total;
                 }
                 double GPA = total / hours;
+                GPA = Math.Round(GPA, 3, MidpointRounding.AwayFromZero);
                 gpalabel2.Text = Convert.ToString(GPA);
             }
         }
