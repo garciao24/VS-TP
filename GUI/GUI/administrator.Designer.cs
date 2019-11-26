@@ -73,7 +73,7 @@
             // enrolledstudentsgroupbox
             // 
             this.enrolledstudentsgroupbox.Controls.Add(this.enrolledstudentsgridview);
-            this.enrolledstudentsgroupbox.ForeColor = System.Drawing.Color.White;
+            this.enrolledstudentsgroupbox.ForeColor = System.Drawing.Color.Black;
             this.enrolledstudentsgroupbox.Location = new System.Drawing.Point(17, 26);
             this.enrolledstudentsgroupbox.Name = "enrolledstudentsgroupbox";
             this.enrolledstudentsgroupbox.Size = new System.Drawing.Size(882, 225);
@@ -163,7 +163,7 @@
             // enrolledcoursesgroupbox
             // 
             this.enrolledcoursesgroupbox.Controls.Add(this.enrolledcoursesgridview);
-            this.enrolledcoursesgroupbox.ForeColor = System.Drawing.Color.White;
+            this.enrolledcoursesgroupbox.ForeColor = System.Drawing.Color.Black;
             this.enrolledcoursesgroupbox.Location = new System.Drawing.Point(17, 257);
             this.enrolledcoursesgroupbox.Name = "enrolledcoursesgroupbox";
             this.enrolledcoursesgroupbox.Size = new System.Drawing.Size(882, 191);
